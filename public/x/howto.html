@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>How to play Coup Ahoo</title>
+    <title>Play Coup Ahoo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet" />
     <style>
@@ -14,125 +14,62 @@
         font-family: "Luckiest Guy", "Arial Black", sans-serif;
       }
       .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-      .fg { position: absolute; object-fit: contain; pointer-events: none; }
-      .stroke {
-        color: #ff3; -webkit-text-stroke: 0.07em #000; paint-order: stroke fill;
-        letter-spacing: 0.03em; margin: 0; line-height: 0.92;
+      .t {
+        margin: 0; color: #ff3; text-align: center; line-height: 0.9;
+        -webkit-text-stroke: 0.07em #000; paint-order: stroke fill; letter-spacing: 0.03em;
       }
-      .sub {
-        color: #fff8e7; -webkit-text-stroke: 0.07em #000; paint-order: stroke fill;
-        margin: 0; letter-spacing: 0.02em;
+      .s {
+        margin: 0; color: #fff8e7; text-align: center;
+        -webkit-text-stroke: 0.07em #000; paint-order: stroke fill;
       }
       .grid {
-        position: absolute; left: 48px; right: 48px; top: 168px; bottom: 36px;
-        display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 22px;
+        position: absolute; left: 32px; right: 32px; top: 150px; bottom: 28px;
+        display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 16px;
       }
       .card {
-        background: #fff8e7;
-        border: 6px solid #000;
-        border-radius: 18px;
-        padding: 18px 22px 14px;
-        display: flex; flex-direction: column; align-items: center; justify-content: space-between;
-        box-shadow: 8px 8px 0 #000;
+        position: relative; overflow: hidden;
+        border: 6px solid #000; border-radius: 16px; background: #5d9acf;
+        box-shadow: 6px 6px 0 #000;
       }
-      .n {
-        align-self: flex-start;
-        background: #ff3; border: 4px solid #000; border-radius: 10px;
-        font-size: 28px; padding: 2px 12px; color: #000;
+      .card img.scene {
+        position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+        object-position: center 40%;
       }
-      .h { font-size: 38px; margin: 4px 0 0; color: #000; text-align: center; }
-      .p { font-size: 22px; margin: 0; color: #000; text-align: center; line-height: 1.15; }
-      .dice { display: flex; gap: 12px; align-items: center; justify-content: center; min-height: 110px; }
-      .die {
-        width: 88px; height: 88px; background: #fff; border: 5px solid #000; border-radius: 16px;
-        display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr 1fr;
-        padding: 10px; gap: 4px;
+      .cap {
+        position: absolute; left: 10px; right: 10px; bottom: 10px;
+        margin: 0; padding: 8px 10px;
+        background: #fff8e7; border: 4px solid #000; border-radius: 12px;
+        color: #000; font-size: 22px; text-align: center; line-height: 1.05;
+        z-index: 2;
       }
-      .die.plated { background: #a9c5db; }
-      .die.zero { position: relative; }
-      .die.zero::after { content: "0"; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 36px; color: #000; }
-      .pip { width: 14px; height: 14px; border-radius: 50%; background: #000; justify-self: center; align-self: center; }
-      .pip.off { background: transparent; }
-      .row { display: flex; gap: 16px; align-items: center; }
-      .btn {
-        background: #6cd158; border: 4px solid #000; border-radius: 12px;
-        font-size: 22px; padding: 8px 16px; color: #000;
-      }
-      .btn.keep { background: #fffdf7; }
-      .bang { font-size: 72px; color: #c41e3a; -webkit-text-stroke: 0.05em #000; paint-order: stroke fill; margin: 0; }
     </style>
   </head>
   <body>
     <div class="board" id="howto">
       <img class="bg" src="/ahoo/sky-texture.svg" alt="" />
-      <img class="fg" src="/ahoo/clouds.svg" alt="" style="top:0;left:-40px;width:1600px;height:280px" />
-      <p class="stroke" style="position:absolute;left:0;right:0;top:18px;text-align:center;font-size:72px">HOW TO PLAY</p>
-      <p class="sub" style="position:absolute;left:0;right:0;top:102px;text-align:center;font-size:34px">COUP AHOO · DON'T ROLL THIRTEEN</p>
+      <p class="t" style="position:absolute;left:0;right:0;top:16px;font-size:64px">PLAY THE GAME</p>
+      <p class="s" style="position:absolute;left:0;right:0;top:90px;font-size:26px">COUP AHOO · coupahoo.lol</p>
       <div class="grid">
         <article class="card">
-          <span class="n">1</span>
-          <p class="h">ROLL 3d6</p>
-          <div class="dice">
-            <div class="die" data-p="5"></div>
-            <div class="die" data-p="5"></div>
-            <div class="die" data-p="4"></div>
-          </div>
-          <p class="p">That's your ship. Pips = HP. Count = guns.</p>
+          <img class="scene" src="/ahoo/scene-hero.svg" alt="" />
+          <p class="cap">1. ROLL YOUR CARGO</p>
         </article>
         <article class="card">
-          <span class="n">2</span>
-          <p class="h">FEAR 13</p>
-          <div class="dice">
-            <div class="die curse" data-p="6"></div>
-            <div class="die curse" data-p="6"></div>
-            <div class="die curse" data-p="1"></div>
-          </div>
-          <p class="p">Sum 13 = cursed. First shot of every volley goes overboard.</p>
+          <img class="scene" src="/ahoo/scene-battle.svg" alt="" style="object-position: center 55%" />
+          <p class="cap">2. DON'T ROLL THIRTEEN</p>
         </article>
         <article class="card">
-          <span class="n">3</span>
-          <p class="h">KEEP OR REROLL</p>
-          <div class="dice">
-            <div class="die" data-p="2"></div>
-            <div class="die" data-p="1"></div>
-            <div class="die zero" data-p="0"></div>
-          </div>
-          <div class="row">
-            <span class="btn">KEEP</span>
-            <span class="btn keep">REROLL</span>
-          </div>
-          <p class="p">Then click their cargo. Plated crate only takes 1.</p>
+          <img class="scene" src="/ahoo/ship-player.svg" alt="" style="object-fit: contain; object-position: center 70%; background: #5d9acf" />
+          <img src="/ahoo/sky-texture.svg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0" />
+          <img src="/ahoo/ship-player.svg" alt="" style="position:absolute;left:8%;right:8%;bottom:-8%;height:95%;object-fit:contain;z-index:1" />
+          <p class="cap">3. TAKE THE FLEET</p>
         </article>
         <article class="card">
-          <span class="n">4</span>
-          <p class="h">EMPTY DECK SINKS</p>
-          <div class="row" style="gap:8px">
-            <img src="/ahoo/ship-player.svg" alt="" style="height:210px" />
-            <p class="bang">VS</p>
-            <img src="/ahoo/ship-enemy.svg" alt="" style="height:200px;transform:scaleX(-1)" />
-          </div>
-          <p class="p">Nine fights. Last is the flagship. Take the fleet.</p>
+          <img src="/ahoo/sky-texture.svg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" />
+          <img src="/ahoo/captain-posing.svg" alt="" style="position:absolute;left:18%;bottom:-6%;height:92%;object-fit:contain;z-index:1" />
+          <p class="cap">4. LOG TO THE CHEST</p>
         </article>
       </div>
     </div>
-    <script>
-      const map = {
-        0: [0,0,0, 0,0,0, 0,0,0],
-        1: [0,0,0, 0,1,0, 0,0,0],
-        2: [1,0,0, 0,0,0, 0,0,1],
-        3: [1,0,0, 0,1,0, 0,0,1],
-        4: [1,0,1, 0,0,0, 1,0,1],
-        5: [1,0,1, 0,1,0, 1,0,1],
-        6: [1,0,1, 1,0,1, 1,0,1],
-      };
-      document.querySelectorAll(".die").forEach((el) => {
-        const n = Number(el.getAttribute("data-p") || 0);
-        map[n].forEach((on) => {
-          const s = document.createElement("span");
-          s.className = on ? "pip" : "pip off";
-          el.appendChild(s);
-        });
-      });
-    </script>
   </body>
 </html>
