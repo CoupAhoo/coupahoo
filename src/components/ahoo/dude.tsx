@@ -252,7 +252,7 @@ export function Dude({
       height={h}
       className={className}
       aria-hidden="true"
-      overflow="visible"
+      overflow={head ? "hidden" : "visible"}
     >
       <DudeFigure role={role} angry={angry} crown={crown} posing={posing} />
     </svg>

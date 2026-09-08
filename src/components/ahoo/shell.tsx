@@ -18,21 +18,18 @@ export function Shell({ children }: { children: ReactNode }) {
   const play = pathname === "/play";
   return (
     <div className="min-h-dvh bg-sky text-ink">
-      <header className="sticky top-0 z-30 overflow-visible border-b-[3px] border-ink bg-paper/95 backdrop-blur-sm">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-2 sm:flex-row sm:flex-wrap sm:items-center">
-          <div className="flex items-center gap-3">
-            <Link to="/" className="flex items-center gap-2 no-underline">
-              <Dude role="captain" crop="head" size={40} />
-              <span className="leading-tight">
-                <span className="block font-display text-xl tracking-wide">{NAME}</span>
-                <span className="block text-xs font-semibold text-ink/60">{SLOGAN}</span>
-              </span>
-            </Link>
-            <div className="ml-auto sm:hidden">
-              <WalletBar />
-            </div>
-          </div>
-          <nav className="flex flex-wrap items-center gap-1 sm:ml-auto">
+      <header className="sticky top-0 z-30 border-b-[3px] border-ink bg-paper/95 backdrop-blur-sm">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-3 gap-y-2 px-4 py-2">
+          <Link to="/" className="flex min-w-0 items-center gap-2 no-underline">
+            <span className="relative grid h-10 w-10 shrink-0 place-items-center overflow-hidden">
+              <Dude role="captain" crop="head" size={40} className="overflow-hidden" />
+            </span>
+            <span className="leading-tight">
+              <span className="block font-display text-xl tracking-wide">{NAME}</span>
+              <span className="block text-xs font-semibold text-ink/60">{SLOGAN}</span>
+            </span>
+          </Link>
+          <nav className="flex flex-wrap items-center gap-1">
             {NAV.map((n) => {
               const on = pathname === n.to;
               return (
@@ -47,13 +44,9 @@ export function Shell({ children }: { children: ReactNode }) {
                 </Link>
               );
             })}
-            <span className="hidden sm:inline-flex">
-              <WalletBar />
-            </span>
           </nav>
-        </div>
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 pb-2">
-          <Socials compact />
+          <Socials compact className="sm:ml-auto" />
+          <WalletBar />
         </div>
       </header>
       <main
@@ -68,7 +61,9 @@ export function Shell({ children }: { children: ReactNode }) {
       <footer className="border-t-[3px] border-ink bg-paper">
         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-5 text-xs text-ink/70 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-3">
-            <Dude role="captain" size={36} />
+            <span className="grid h-10 w-8 shrink-0 overflow-hidden">
+              <Dude role="captain" size={36} className="overflow-hidden" />
+            </span>
             <p>{ATTRIBUTION}</p>
           </div>
           <div className="flex flex-col items-start gap-2 sm:items-end">
