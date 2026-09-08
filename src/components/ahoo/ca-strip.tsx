@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {
   CHAIN,
+  CHEST_NAME,
   CONTRACTS,
   TICKER,
   explorerAddress,
@@ -66,8 +67,8 @@ export function CaStrip() {
           {CHAIN.name} ({CHAIN.id})
         </p>
       </div>
-      <CaRow label="Token CA" ca={CONTRACTS.token} pending="pending — paste at LetsCash launch" trade />
-      <CaRow label="Hold CA" ca={CONTRACTS.hold} pending="pending — paste after Remix deploy" />
+      <CaRow label={`$${TICKER}`} ca={CONTRACTS.token} pending="pending — paste at LetsCash launch" trade />
+      <CaRow label={CHEST_NAME} ca={CONTRACTS.chest} pending="pending — paste after Remix deploy" />
     </section>
   );
 }

@@ -20,19 +20,19 @@ Do not skip. Token is last.
 8. Telegram channel: paste `TELEGRAM.md`. Image: `cover.png`. No CA.
 
 ## 2. Cabin
-Studio EOA. This is constructor `cabin` on Hold.sol.
+Studio EOA. This is constructor `cabin` on Chest.sol.
 Never put this address in the LetsCash fee form.
 
-## 3. Hold (Remix, chain 4663)
-- File: `contracts/Hold.sol`
+## 3. The Chest (Remix, chain 4663)
+- File: `contracts/Chest.sol`
 - Solidity 0.8.24, optimizer 200, EVM cancun
 - Constructor: cabin EOA
 - Verify on Blockscout, single file, MIT
 - Check: `cabin() == cabin`, `pots()`, `socials()`
 
-## 4. Paste Hold CA
-`src/lib/game.ts` → `HOLD_CA`. Commit. Push. Vercel picks it up.
-Site Hold page should show the address.
+## 4. Paste The Chest
+`src/lib/game.ts` → `CHEST_CA`. Commit. Push. Vercel picks it up.
+Site Chest page should show the address.
 
 ## 5. First post (mechanics + infra)
 Paste `FIRST.md`. Cover image = `cover.png`.
@@ -42,7 +42,7 @@ Optional: X Article = `ARTICLE.md` with `cover.png`.
 ## 6. LetsCash LAST
 - Name Coup Ahoo, ticker AHOO
 - Tax 3%
-- Fee recipient = Hold CA only
+- Fee recipient = The Chest only
 - Custom quote empty (ETH)
 - LP lock on
 - Developer buy your call
@@ -57,7 +57,7 @@ Edit bio if you want the CA in it.
 Do not invent TVL, holders, or volume.
 
 ## Never
-- Token before Hold
+- Token before The Chest
 - EOA as LetsCash fee recipient
 - Fake pots
 - Porting Haavikko sprites/song (attribution only)

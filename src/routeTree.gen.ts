@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ChestRouteImport } from './routes/chest'
 import { Route as HoldRouteImport } from './routes/hold'
 import { Route as LoreRouteImport } from './routes/lore'
 import { Route as PlayRouteImport } from './routes/play'
@@ -18,6 +19,11 @@ import { Route as TokenRouteImport } from './routes/token'
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ChestRoute = ChestRouteImport.update({
+  id: '/chest',
+  path: '/chest',
   getParentRoute: () => rootRouteImport,
 } as any)
 const HoldRoute = HoldRouteImport.update({
@@ -43,6 +49,7 @@ const TokenRoute = TokenRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/chest': typeof ChestRoute
   '/hold': typeof HoldRoute
   '/lore': typeof LoreRoute
   '/play': typeof PlayRoute
@@ -50,6 +57,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/chest': typeof ChestRoute
   '/hold': typeof HoldRoute
   '/lore': typeof LoreRoute
   '/play': typeof PlayRoute
@@ -58,6 +66,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/chest': typeof ChestRoute
   '/hold': typeof HoldRoute
   '/lore': typeof LoreRoute
   '/play': typeof PlayRoute
@@ -65,14 +74,15 @@ export interface FileRoutesById {
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/hold' | '/lore' | '/play' | '/token'
+  fullPaths: '/' | '/chest' | '/hold' | '/lore' | '/play' | '/token'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/hold' | '/lore' | '/play' | '/token'
-  id: '__root__' | '/' | '/hold' | '/lore' | '/play' | '/token'
+  to: '/' | '/chest' | '/hold' | '/lore' | '/play' | '/token'
+  id: '__root__' | '/' | '/chest' | '/hold' | '/lore' | '/play' | '/token'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ChestRoute: typeof ChestRoute
   HoldRoute: typeof HoldRoute
   LoreRoute: typeof LoreRoute
   PlayRoute: typeof PlayRoute
@@ -86,6 +96,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/chest': {
+      id: '/chest'
+      path: '/chest'
+      fullPath: '/chest'
+      preLoaderRoute: typeof ChestRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/hold': {
@@ -121,6 +138,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ChestRoute: ChestRoute,
   HoldRoute: HoldRoute,
   LoreRoute: LoreRoute,
   PlayRoute: PlayRoute,

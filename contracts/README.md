@@ -1,8 +1,10 @@
-# The Hold
+# The Chest
 
 Remix · Solidity `0.8.24` · optimizer `200` · EVM `cancun` · chain `4663`.
 
-Fee recipient for `$AHOO` is this contract. One LetsCash recipient. Split is inside:
+File: `contracts/Chest.sol`. Contract name: `Chest`. On-chain `name()` is **The Chest**.
+
+Fee recipient for `$AHOO`. One LetsCash recipient. Split is inside:
 
 | Slice | bps | Role |
 | --- | --- | --- |
@@ -12,13 +14,24 @@ Fee recipient for `$AHOO` is this contract. One LetsCash recipient. Split is ins
 
 `settle` is permissionless. No keeper.
 
-## Order
+`socials()` returns name, ticker, description, website, twitter, telegram, github.
 
-1. Deploy `Hold.sol` with constructor arg = cabin (studio) EOA.
-2. Verify on Blockscout from Remix (single file, MIT).
-3. Paste Hold CA into `src/lib/game.ts` as `HOLD_CA`.
-4. LetsCash launch `$AHOO` last. Fee recipient = **Hold CA**. Tax 3%. One recipient. Custom quote empty. Developer buy your call.
-5. Paste token CA into `TOKEN_CA`.
+## Remix deploy
+
+1. Open [Remix](https://remix.ethereum.org).
+2. New file `Chest.sol`. Paste [contracts/Chest.sol](https://github.com/CoupAhoo/coupahoo/blob/main/contracts/Chest.sol).
+3. Compiler: `0.8.24` · Enable optimization · runs `200` · EVM `cancun`.
+4. Compile.
+5. Deploy & Run: Environment **Injected Provider**. Network **Robinhood Chain (4663)**.
+6. Constructor `cabin_` = studio EOA (the wallet you control). Never the LetsCash fee field.
+7. Deploy. Confirm. Save the address.
+8. Verify on [Blockscout](https://robinhoodchain.blockscout.com) — single file, MIT, same compiler settings.
+9. Read: `cabin()` equals studio EOA. `pots()` is zeros. `socials()` shows The Chest + t.me/CoupAhoo.
+10. Paste the address into `src/lib/game.ts` as `CHEST_CA`. Push.
+
+## After The Chest is live
+
+LetsCash launch `$AHOO` last. Fee recipient = **The Chest** address. Tax 3%. Custom quote empty. Developer buy your call.
 
 Do not put an EOA in the LetsCash fee form.
 
@@ -27,5 +40,3 @@ Do not put an EOA in the LetsCash fee form.
 ```
 000000000000000000000000 + cabin (20 bytes, no 0x)
 ```
-
-Check: `cabin() == cabin EOA`, `pots()`, `socials()`.

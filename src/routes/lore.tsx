@@ -53,7 +53,7 @@ function Lore() {
         ))}
       </section>
       <p className="text-lg font-semibold leading-relaxed">
-        The Hold is the lockbox under the floorboards. Trades on the token feed it. The best logged
+        The Chest is the lockbox under the floorboards. Trades on the token feed it. The best logged
         run of each watch can pull the prize. No keeper. Anyone may settle.
       </p>
       <p className="text-sm text-ink/60">{ATTRIBUTION}</p>

@@ -1,6 +1,6 @@
 # Don't roll thirteen.
 
-Coup Ahoo is a ship made of dice. You play it in the browser. The token comes after The Hold is on-chain. This is the loop and the pipes.
+Coup Ahoo is a ship made of dice. You play it in the browser. The token comes after The Chest is on-chain. This is the loop and the pipes.
 
 ## The hull
 
@@ -18,7 +18,7 @@ Combat dice are 0 / 0 / 1 / 1 / 2 / 2. You roll a volley, keep or reroll, then c
 - Lookout — enemy wastes their first shot.
 - Cook — +3 gold every ship you sink.
 
-Take the fleet one sloop at a time. Nine encounters. Last one is the flagship. Log a run if The Hold is live. One log per wallet per epoch.
+Take the fleet one sloop at a time. Nine encounters. Last one is the flagship. Log a run if The Chest is live. One log per wallet per epoch.
 
 Play: https://coupahoo.lol/play
 
@@ -26,9 +26,9 @@ Play: https://coupahoo.lol/play
 
 $AHOO launches on LetsCash, Robinhood Chain (id 4663). Quote is ETH. LP locks at launch. Trade tax is 3% of the ETH leg.
 
-LetsCash keeps 0.3% as platform. 2.7% goes to The Hold. One recipient in the launch form.
+LetsCash keeps 0.3% as platform. 2.7% goes to The Chest. One recipient in the launch form.
 
-The Hold splits every wei it receives:
+The Chest splits every wei it receives:
 
 | Slice | Share | What it does |
 | --- | --- | --- |
@@ -38,22 +38,22 @@ The Hold splits every wei it receives:
 
 `settle` is permissionless. Anyone may close a finished epoch. Empty epochs emit and move on. The prize that did not pay stays in the pot.
 
-Cabin is set in the constructor. It cannot be the LetsCash fee recipient. Drip is not a holder airdrop until cabin sends it. If we have not sent it, it is still sitting in The Hold.
+Cabin is set in the constructor. It cannot be the LetsCash fee recipient. Drip is not a holder airdrop until cabin sends it. If we have not sent it, it is still sitting in The Chest.
 
 ## What is live, what is not
 
 Live now: the game, the site, the GitHub, this account.
 
-Not live until we paste them: Hold CA, token CA. We do not invent TVL.
+Not live until we paste them: The Chest, token CA. We do not invent TVL.
 
-Order: cabin EOA → Remix `Hold.sol` on 4663 → verify on Blockscout → Hold CA on the site → LetsCash last, fee recipient = Hold CA, tax 3% → token CA on the site → this post gets the CA.
+Order: cabin EOA → Remix `Chest.sol` on 4663 → verify on Blockscout → The Chest on the site → LetsCash last, fee recipient = The Chest, tax 3% → token CA on the site → this post gets the CA.
 
 ## Attribution
 
-Ship & dice loop inspired by Coup Ahoo © Antti Haavikko (js13k). Hold, token and chain original. Sprites and song not ported.
+Ship & dice loop inspired by Coup Ahoo © Antti Haavikko (js13k). Chest, token and chain original. Sprites and song not ported.
 
 Site: https://coupahoo.lol
 Play: https://coupahoo.lol/play
-Hold: https://coupahoo.lol/hold
+Chest: https://coupahoo.lol/chest
 Token: https://coupahoo.lol/token
 GitHub: https://github.com/CoupAhoo/coupahoo

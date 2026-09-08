@@ -1,16 +1,17 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
-/// @title The Hold — Coup Ahoo fee sink and epoch prize
-/// @notice LetsCash fee recipient for $AHOO.
+/// @title The Chest — Coup Ahoo prize chest
+/// @notice LetsCash fee recipient for $AHOO. Best run of each watch can take the prize.
 /// @dev Solidity 0.8.24, optimizer 200, EVM cancun. Remix on chain 4663.
-contract Hold {
-    string public name = "The Hold";
+contract Chest {
+    string public name = "The Chest";
     string public ticker = "AHOO";
     string public description =
-        "Dice are your hull. Thirteen sinks you. Take the fleet.";
+        "Don't roll thirteen. Dice are the hull. Fees feed The Chest.";
     string public website = "https://coupahoo.lol";
     string public twitter = "https://x.com/CoupAhoo";
+    string public telegram = "https://t.me/CoupAhoo";
     string public github = "https://github.com/CoupAhoo/coupahoo";
 
     uint256 public constant PRIZE_BPS = 7000;
@@ -135,7 +136,7 @@ contract Hold {
         emit CabinWithdraw(to, amount);
     }
 
-    /// @notice Cabin forwards accrued drip to a later holder distributor. Not a claim.
+    /// @notice Cabin forwards accrued drip to a later distributor. Not a claim.
     function sendDrip(address to, uint256 amount) external {
         if (msg.sender != cabin) revert OnlyCabin();
         if (to == address(0)) revert ZeroTo();
@@ -149,8 +150,16 @@ contract Hold {
     function socials()
         external
         view
-        returns (string memory, string memory, string memory, string memory, string memory, string memory)
+        returns (
+            string memory,
+            string memory,
+            string memory,
+            string memory,
+            string memory,
+            string memory,
+            string memory
+        )
     {
-        return (name, ticker, description, website, twitter, github);
+        return (name, ticker, description, website, twitter, telegram, github);
     }
 }

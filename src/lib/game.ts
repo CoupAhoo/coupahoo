@@ -34,19 +34,20 @@ export const POOL_MANAGER = "0x8366a39CC670B4001A1121B8F6A443A643e40951";
 
 /** Empty until the LetsCash launch is pasted in. */
 export const TOKEN_CA = "";
-/** Empty until Remix deploy of Hold.sol is pasted in. */
-export const HOLD_CA = "";
+/** Empty until Remix deploy of Chest.sol is pasted in. */
+export const CHEST_CA = "";
+export const CHEST_NAME = "The Chest";
 
 export const CONTRACTS = {
   token: TOKEN_CA,
-  hold: HOLD_CA,
+  chest: CHEST_CA,
 } as const;
 
 export const FEE = {
   taxBps: 300,
   platformBps: 30,
   creatorBps: 270,
-  holdShare: {
+  chestShare: {
     prizeBps: 7000,
     dripBps: 2000,
     cabinBps: 1000,
@@ -58,7 +59,7 @@ export const CURSE = 13;
 export const MIX_FEE_ETH = 0; // no mix — combat game
 
 export const ATTRIBUTION =
-  "Ship & dice loop inspired by Coup Ahoo © Antti Haavikko (js13k). Hold, token and chain original. Sprites and song not ported.";
+  "Ship & dice loop inspired by Coup Ahoo © Antti Haavikko (js13k). Chest, token and chain original. Sprites and song not ported.";
 
 export const BIO =
   "$AHOO · Dice are your hull. Thirteen sinks you. Take the fleet.";

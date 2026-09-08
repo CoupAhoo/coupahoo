@@ -8,7 +8,7 @@ import { Socials } from "@/components/ahoo/socials";
 const NAV = [
   { to: "/", label: "Home" },
   { to: "/play", label: "Play" },
-  { to: "/hold", label: "Hold" },
+  { to: "/chest", label: "Chest" },
   { to: "/lore", label: "Lore" },
   { to: "/token", label: "Token" },
 ] as const;

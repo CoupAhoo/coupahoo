@@ -467,7 +467,7 @@ export function resolveEvent(run: Run, yes: boolean): Run {
   }
 
   if (cargo.length === 0) {
-    return { ...r, cargo, gold, crew, event: null, phase: "defeat", log: "No cargo left. The Hold writes you off." };
+    return { ...r, cargo, gold, crew, event: null, phase: "defeat", log: "No cargo left. The Chest writes you off." };
   }
   return sailToNext({ ...r, cargo, gold, crew, event: null, log, phase: "sailing" });
 }

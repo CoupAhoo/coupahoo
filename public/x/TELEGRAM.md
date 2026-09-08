@@ -1,6 +1,6 @@
 Don't roll thirteen.
 
-Coup Ahoo is a dice hull on Robinhood Chain. You play it now. $AHOO launches after The Hold is on-chain. This is the loop and the pipes.
+Coup Ahoo is a dice hull on Robinhood Chain. You play it now. $AHOO launches after The Chest is on-chain. This is the loop and the pipes.
 
 Play: https://coupahoo.lol
 X: https://x.com/CoupAhoo
@@ -37,25 +37,25 @@ $AHOO · LetsCash · Robinhood Chain (4663) · quote ETH · LP locked at launch.
 
 Tax: 3% of the ETH leg.
 Platform 0.3%.
-2.7% to The Hold.
+2.7% to The Chest.
 
-The Hold split:
+The Chest split:
 
 70% prize — best logged run of each 15-minute epoch. Anyone may settle. No keeper. 80% of that pot pays. 1% of the payout is a closer tip. Rest rolls. Empty epochs emit and move on.
 
-20% drip — accrues on the contract. Cabin may send it later to a distributor. Not a claim button. If we have not sent it, it is still sitting in The Hold.
+20% drip — accrues on the contract. Cabin may send it later to a distributor. Not a claim button. If we have not sent it, it is still sitting in The Chest.
 
 10% cabin — studio. Withdraw only from cabin.
 
-Hold: https://coupahoo.lol/hold
+Chest: https://coupahoo.lol/chest
 Token: https://coupahoo.lol/token
 
 —— ORDER ——
 
 Play is live.
-Hold deploys next (Remix, cabin in the constructor, verify on Blockscout).
-Token is last. Fee recipient = Hold CA. Tax 3%.
+The Chest deploys next (Remix, cabin in the constructor, verify on Blockscout).
+Token is last. Fee recipient = The Chest. Tax 3%.
 
 CA posts when LetsCash is live.
 
-Ship & dice loop inspired by Coup Ahoo © Antti Haavikko (js13k). Hold, token and chain original. Sprites and song not ported.
+Ship & dice loop inspired by Coup Ahoo © Antti Haavikko (js13k). Chest, token and chain original. Sprites and song not ported.

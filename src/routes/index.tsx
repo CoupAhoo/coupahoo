@@ -60,8 +60,8 @@ function Home() {
           },
           {
             n: "03",
-            t: "The Hold pays the wake",
-            d: "Trades feed The Hold. Best run of each epoch can take the prize. Anyone may settle. No keeper.",
+            t: "The Chest pays the wake",
+            d: "Trades feed The Chest. Best run of each epoch can take the prize. Anyone may settle. No keeper.",
             role: "carpenter" as const,
           },
         ].map((b) => (

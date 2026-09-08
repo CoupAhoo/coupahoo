@@ -4,7 +4,7 @@ import { Sea } from "@/components/ahoo/sea";
 import { Ship } from "@/components/ahoo/ship";
 import { Socials } from "@/components/ahoo/socials";
 import { TitleMark } from "@/components/ahoo/title-mark";
-import { CHAIN, FEE, LETSCASH_PAD, TICKER } from "@/lib/game";
+import { CHAIN, CHEST_NAME, FEE, LETSCASH_PAD, TICKER } from "@/lib/game";
 
 const TOKEN_CARGO = [
   { id: "tok-1", pips: 6, plated: false },
@@ -22,7 +22,7 @@ function TokenPage() {
     ["Supply", "1,000,000,000"],
     ["Trade tax", `${FEE.taxBps / 100}% of the ETH leg`],
     ["Platform", `${FEE.platformBps / 100}% LetsCash`],
-    ["The Hold", `${FEE.creatorBps / 100}% of every trade`],
+    [CHEST_NAME, `${FEE.creatorBps / 100}% of every trade`],
     ["Quote", "ETH"],
     ["LP", "Locked at launch"],
   ];
@@ -39,7 +39,7 @@ function TokenPage() {
         <h1 className="font-display text-5xl tracking-wide">The token is the wake.</h1>
         <p className="mt-3 text-lg leading-relaxed text-ink/80">
           Launch on LetsCash. {FEE.taxBps / 100}% tax. Platform {FEE.platformBps / 100}%. The rest
-          goes to The Hold — prize, drip, cabin.
+          goes to {CHEST_NAME} — prize, drip, cabin.
         </p>
       </header>
       <CaStrip />
