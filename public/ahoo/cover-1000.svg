@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+<!--
+  Cover art rebuilt as vector from "Coup Ahoo" by Antti Haavikko.
+  Source: github.com/anttihaavikko/coup-ahoo  (MIT License)
+  Geometry from src/ship.ts, src/dice.ts, src/dude.ts.
+-->
+<rect width="1000" height="1000" fill="#5d9acf"/>
+<g transform="translate(-660,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(-550,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(-440,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(-330,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(-220,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(-110,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(0,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(110,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(220,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(330,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(440,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(550,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(660,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(770,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(880,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(990,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(1100,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(1210,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(1320,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(1430,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(1540,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(1650,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(1760,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(1870,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(1980,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(2090,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(2200,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<g transform="translate(2310,0) rotate(45)"><path d="M0,-1200 L0,2600" stroke="#0000ff11" stroke-width="52" stroke-linecap="round" stroke-dasharray="0 38" fill="none"/></g>
+<ellipse cx="130" cy="120" rx="133" ry="28.5" fill="none" stroke="#ffffff22" stroke-width="95" stroke-linecap="round" stroke-dasharray="0 76"/>
+<ellipse cx="480" cy="60" rx="175" ry="37.5" fill="none" stroke="#ffffff22" stroke-width="125" stroke-linecap="round" stroke-dasharray="0 100"/>
+<ellipse cx="830" cy="150" rx="140" ry="30" fill="none" stroke="#ffffff22" stroke-width="100" stroke-linecap="round" stroke-dasharray="0 80"/>
+<ellipse cx="300" cy="330" rx="105" ry="22.5" fill="none" stroke="#ffffff22" stroke-width="75" stroke-linecap="round" stroke-dasharray="0 60"/>
+
+<!-- gemi: govde, murettebat, top -->
+<g transform="translate(470,905) scale(1.34)">
+  <g transform="scale(1.35)">
+    <g transform="translate(-150,-105)"><g transform="translate(0,0) scale(0.9)">
+<path d="M0,-32.5 Q31.5,-31.25 22,0" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0,-32.5 Q-31.5,-31.25 -22,0" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(0,-2.5) rotate(0.86)">
+  <path d="M0,-40 L0,-90" stroke="#000" stroke-width="50" stroke-linecap="round" fill="none"/>
+  <path d="M0,-40 L0,-90" stroke="#edece1" stroke-width="35" stroke-linecap="round" fill="none"/>
+  <g transform="translate(0,-20)">
+    <g transform="translate(22,-12.5)">
+      <path d="M0,-18.75 Q18.5,-24.5 16.5,-3.75" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="16.5" cy="-3.75" r="3" fill="#000"/>
+    </g>
+    <g transform="translate(-22,-12.5)">
+      <path d="M0,-18.75 Q-21.5,-24.5 -13.5,-3.75" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="-13.5" cy="-3.75" r="3" fill="#000"/>
+    </g>
+    <g transform="translate(4,-51.25)"><g transform="scale(0.3)">
+      <ellipse cx="-44" cy="20" rx="16.5" ry="11" fill="#ed4ea3aa"/>
+      <ellipse cx="44" cy="20" rx="16.5" ry="11" fill="#ed4ea3aa"/>
+      <path d="M-16.8,20 Q0,40 16.8,20 Q0,40 -16.8,20" fill="#000" stroke="#000" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="-30" cy="0" rx="10" ry="10" fill="#000"/>
+      <ellipse cx="30" cy="0" rx="10" ry="10" fill="#000"/>
+    </g><g transform="translate(-3.9,0) scale(1.35)"><g transform="translate(0,-16.25)"><g transform="translate(0,18.75) scale(-1.5,1.5)">
+        <g transform="translate(2,-1)"><path d="M8,-15 C-12,-5 -12,-5 -20,-5.5 C-10,-26 -3,-25.5 10,-18" fill="#4c8a3e" stroke="#000" stroke-width="6" stroke-linejoin="round"/><g transform="translate(9,-17) scale(2.1) translate(-9,17)"><path d="M9,-17 C7,-25 7,-25 14.2,-35 C15,-25 15,-25 9,-17" fill="#b3701c" stroke="#000" stroke-width="2.86" stroke-linejoin="round"/></g></g>
+      </g></g></g></g>
+  </g>
+</g>
+</g></g>
+  </g>
+  <g transform="translate(160,0) rotate(-5.73)">
+  <g transform="translate(190,0)">
+    <path d="M0,-225 C-300,-250 -300,-150 0,-175 Z"
+          fill="#666" stroke="#000" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="-20" y="-230" width="20" height="60" fill="#666" stroke="#000" stroke-width="7"/>
+  </g>
+  <path d="M0,-150 C0,-230 70,-230 70,-150 Z" fill="#a68b49" stroke="#000" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="35" cy="-190" r="8" fill="#000"/>
+</g>
+  <path d="M-200,-150 L-170,10 L180,10 L250,-160 Z M-193,-110 L233,-120 M-183,-72 L213,-77 M-173,-30 L193,-30" fill="#633f15" stroke="#000" stroke-width="7" stroke-linejoin="round"/>
+<text x="-120" y="-100" text-anchor="middle" font-family="Arial Black, Helvetica Neue, Arial, sans-serif" font-size="40"
+      fill="#ff3" stroke="#000" stroke-width="12" stroke-linejoin="round"
+      paint-order="stroke fill">14</text>
+</g>
+
+<!-- kargo zarlari -->
+<g transform="translate(62,600) rotate(-8) scale(1.3)">
+  <rect x="-50" y="-50" width="100" height="100" fill="#fff" stroke="#000" stroke-width="7"/>
+  <rect x="-38" y="-38" width="76" height="76" fill="none" stroke="#000" stroke-width="4" opacity="0.5"/>
+  <circle cx="0" cy="0" r="11" fill="#000"/>
+  <circle cx="-25" cy="-25" r="11" fill="#000"/>
+  <circle cx="25" cy="25" r="11" fill="#000"/>
+  <circle cx="-25" cy="25" r="11" fill="#000"/>
+  <circle cx="25" cy="-25" r="11" fill="#000"/>
+</g>
+<g transform="translate(228,742) rotate(12) scale(1.16)">
+  <rect x="-50" y="-50" width="100" height="100" fill="#e92" stroke="#000" stroke-width="7"/>
+  <rect x="-38" y="-38" width="76" height="76" fill="none" stroke="#000" stroke-width="4" opacity="0.5"/>
+  <circle cx="0" cy="0" r="11" fill="#000"/>
+  <circle cx="-25" cy="-25" r="11" fill="#000"/>
+  <circle cx="25" cy="25" r="11" fill="#000"/>
+</g>
+
+<path d="M1100,1100 L-100,1100 L-100,815 Q-125,786 -100,808 Q-75,779.72 -50,801.72 Q-25,796.89 0,818.89 Q25,807.66 50,829.66 Q75,794.83 100,816.83 Q125,787.29 150,809.29 Q175,794.86 200,816.86 Q225,791.56 250,813.56 Q275,781.01 300,803.01 Q325,791.13 350,813.13 Q375,808.03 400,830.03 Q425,800.57 450,822.57 Q475,785.36 500,807.36 Q525,789.44 550,811.44 Q575,794.75 600,816.75 Q625,785.6 650,807.6 Q675,786.91 700,808.91 Q725,804.7 750,826.7 Q775,805.72 800,827.72 Q825,787.28 850,809.28 Q875,783.62 900,805.62 Q925,794.2 950,816.2 Q975,791.58 1000,813.58 Q1025,786.06 1050,808.06 Q1075,799.11 1100,821.11 Q1125,808.08 1150,830.08 Q1175,792.18 1200,814.18 Z" fill="#03fcf477" stroke="#ffffffbb" stroke-width="8" stroke-linejoin="round"/>
+<text x="500" y="285" text-anchor="middle" textLength="880" lengthAdjust="spacingAndGlyphs" font-family="Arial Black, Helvetica Neue, Arial, sans-serif" font-size="150"
+         fill="#fff" stroke="#000" stroke-width="26" stroke-linejoin="round" paint-order="stroke fill">COUP AHOO</text>
+</svg>
