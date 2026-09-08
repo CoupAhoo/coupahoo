@@ -19,18 +19,16 @@ type Look = {
   cane: string | null;
   flipHat: number;
   scale: number;
-  robin: boolean;
 };
 
 const LOOK: Record<DudeRole, Look> = {
   captain: {
     skin: "#dbac86",
     hat: "#2d6b3a",
-    ribbon: "#c41e3a",
+    ribbon: "#e92",
     cane: "#633f15",
     flipHat: 1,
     scale: 1,
-    robin: true,
   },
   enemy: {
     skin: "#734e3b",
@@ -39,7 +37,6 @@ const LOOK: Record<DudeRole, Look> = {
     cane: "#7d572c",
     flipHat: 1,
     scale: 1,
-    robin: false,
   },
   gunner: {
     skin: "#e3e0bc",
@@ -48,7 +45,6 @@ const LOOK: Record<DudeRole, Look> = {
     cane: null,
     flipHat: -1,
     scale: 0.9,
-    robin: false,
   },
   carpenter: {
     skin: "#ebb7cc",
@@ -57,7 +53,6 @@ const LOOK: Record<DudeRole, Look> = {
     cane: null,
     flipHat: 1,
     scale: 0.9,
-    robin: false,
   },
   lookout: {
     skin: "#6e594f",
@@ -66,7 +61,6 @@ const LOOK: Record<DudeRole, Look> = {
     cane: null,
     flipHat: -1,
     scale: 0.9,
-    robin: false,
   },
   cook: {
     skin: "#edece1",
@@ -75,7 +69,6 @@ const LOOK: Record<DudeRole, Look> = {
     cane: null,
     flipHat: 1,
     scale: 0.9,
-    robin: false,
   },
 };
 
@@ -116,52 +109,20 @@ function Face({ angry }: { angry: boolean }) {
   );
 }
 
-/** Lincoln-green bycocket + long scarlet pheasant feather. */
-function RobinHat({ hat, feather }: { hat: string; feather: string }) {
-  return (
-    <g transform="translate(0,-4)">
-      <path
-        d="M7,-16
-           C 22,-34 34,-58 22,-82
-           C 14,-64 8,-42 3,-22
-           C 4,-18 7,-16 7,-16 Z"
-        fill={feather}
-        stroke={INK}
-        strokeWidth="5.2"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M16,-48 L 26,-54 M14,-60 L 24,-66"
-        fill="none"
-        stroke={INK}
-        strokeWidth="2.2"
-        strokeLinecap="round"
-        opacity="0.45"
-      />
-      <path
-        d="M-20,-6
-           L -8,-40
-           L 14,-18
-           Q 20,-8 10,-5
-           L -12,-3
-           Q -22,-2 -20,-6 Z"
-        fill={hat}
-        stroke={INK}
-        strokeWidth="6"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M 6,-8 Q 20,-9 18,-3 Q 8,-1 5,-6 Z"
-        fill={hat}
-        stroke={INK}
-        strokeWidth="5"
-        strokeLinejoin="round"
-      />
-    </g>
-  );
-}
-
-function PirateHat({ hat, ribbon }: { hat: string; ribbon: string }) {
+function Hat({ hat, ribbon, crown }: { hat: string; ribbon: string; crown: boolean }) {
+  if (crown) {
+    return (
+      <g transform="scale(0.75) translate(0,-12)">
+        <path
+          d="M-12,-10 L12,-10 L12,-25 L5,-19 L0,-27 L-5,-19 L-12,-25 Z"
+          fill="yellow"
+          stroke={INK}
+          strokeWidth="6"
+          strokeLinejoin="round"
+        />
+      </g>
+    );
+  }
   return (
     <g transform="translate(2,-1)">
       <path
@@ -180,34 +141,6 @@ function PirateHat({ hat, ribbon }: { hat: string; ribbon: string }) {
       />
     </g>
   );
-}
-
-function Hat({
-  hat,
-  ribbon,
-  crown,
-  robin,
-}: {
-  hat: string;
-  ribbon: string;
-  crown: boolean;
-  robin: boolean;
-}) {
-  if (crown) {
-    return (
-      <g transform="scale(0.75) translate(0,-12)">
-        <path
-          d="M-12,-10 L12,-10 L12,-25 L5,-19 L0,-27 L-5,-19 L-12,-25 Z"
-          fill="yellow"
-          stroke={INK}
-          strokeWidth="6"
-          strokeLinejoin="round"
-        />
-      </g>
-    );
-  }
-  if (robin) return <RobinHat hat={hat} feather={ribbon} />;
-  return <PirateHat hat={hat} ribbon={ribbon} />;
 }
 
 /** Inner figure. Origin at the feet, matching dude.ts / captain.svg. */
@@ -288,7 +221,7 @@ export function DudeFigure({
             <g transform="translate(-3.9,0) scale(1.35)">
               <g transform="translate(0,-15.55)">
                 <g transform={`translate(0,18.25) scale(${1.5 * look.flipHat},1.5)`}>
-                  <Hat hat={look.hat} ribbon={look.ribbon} crown={crown} robin={look.robin} />
+                  <Hat hat={look.hat} ribbon={look.ribbon} crown={crown} />
                 </g>
               </g>
             </g>
@@ -314,7 +247,7 @@ export function Dude({
   const h = head ? size : size * (250 / 190);
   return (
     <svg
-      viewBox={head ? "-75 -280 150 155" : "-100 -280 210 300"}
+      viewBox={head ? "-62 -228 124 108" : "-95 -235 190 250"}
       width={w}
       height={h}
       className={className}

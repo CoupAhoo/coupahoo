@@ -31,7 +31,7 @@
       <ellipse cx="-30" cy="0" rx="10" ry="10" fill="#000"/>
       <ellipse cx="30" cy="0" rx="10" ry="10" fill="#000"/>
     </g><g transform="translate(-3.9,0) scale(1.35)"><g transform="translate(0,-15.55)"><g transform="translate(0,18.25) scale(1.5,1.5)">
-        <g transform="translate(2,-1)"><path d="M8,-15 C-12,-5 -12,-5 -20,-5.7 C-10,-26 -3,-25.3 10,-18" fill="#e92" stroke="#000" stroke-width="6" stroke-linejoin="round"/><path d="M9,-17 C7,-25 7,-25 13.9,-35 C15,-25 15,-25 9,-17" fill="#a8edae" stroke="#000" stroke-width="6" stroke-linejoin="round"/></g>
+        <g transform="translate(2,-1)"><path d="M8,-15 C-12,-5 -12,-5 -20,-5.7 C-10,-26 -3,-25.3 10,-18" fill="#2d6b3a" stroke="#000" stroke-width="6" stroke-linejoin="round"/><path d="M9,-17 C7,-25 7,-25 13.9,-35 C15,-25 15,-25 9,-17" fill="#e92" stroke="#000" stroke-width="6" stroke-linejoin="round"/></g>
       </g></g></g></g>
   </g>
 </g>
