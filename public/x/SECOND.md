@@ -1,3 +1,5 @@
+Image: post-4x3.png (4:3). Paste CA and LetsCash, then post.
+
 $AHOO is live.
 
 CA:
