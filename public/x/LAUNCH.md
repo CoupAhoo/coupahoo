@@ -9,8 +9,9 @@ Token is last. Do not skip.
 - Play
 - Socials on site (X · Telegram · GitHub)
 - TG channel @CoupAhoo — caption in TELEGRAM.md (under 1024)
-- Chest.sol ready, not deployed
-- CHEST_CA and TOKEN_CA empty on purpose
+- Chest.sol deployed: `0x732aEC9b9A52528f9fFa71c4AF7d2eEb5aE779FA`
+- Cabin on-chain: `0xCFFaF07B22f5E2B60712Ae0576f130034Cc60918`
+- TOKEN_CA empty on purpose
 
 ## Assets
 - Avatar https://coupahoo.lol/x/logo.png
@@ -21,17 +22,15 @@ Token is last. Do not skip.
 ## NOW 1 — X profile
 Avatar logo.png · header banner.png · name Coup Ahoo · bio BIO.md first line · site coupahoo.lol · no CA.
 
-## NOW 2 — Cabin
-`0x732aEC9b9A52528f9fFa71c4AF7d2eEb5aE779FA`
-Constructor `cabin_` on Chest.sol.
+## DONE 2 — Cabin
+`0xCFFaF07B22f5E2B60712Ae0576f130034Cc60918`
 Never this address in the LetsCash fee field.
 
-## NOW 3 — Deploy The Chest
-Remix · Injected Provider · Chest.sol · 0.8.24 · opt 200 · cancun.
-`cabin_` = `0x732aEC9b9A52528f9fFa71c4AF7d2eEb5aE779FA`. Deploy. Verify on Blockscout. Read cabin / pots / socials.
-Send the address. It goes in `src/lib/game.ts` as `CHEST_CA`. Push. Site shows The Chest.
+## DONE 3 — The Chest
+`0x732aEC9b9A52528f9fFa71c4AF7d2eEb5aE779FA`
+On-chain `name()` = The Chest. Telegram + GitHub match.
 
-## THEN 4 — X first post
+## NOW 4 — X first post
 FIRST.md + cover.png. No token CA. “CA posts at launch.”
 
 ## THEN 5 — LetsCash LAST

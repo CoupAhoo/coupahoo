@@ -14,6 +14,8 @@ LetsCash launch. 3% trade tax (0.3% platform, 2.7% The Chest). Split inside The 
 
 CA posts at launch.
 
+The Chest: [`0x732aEC9b9A52528f9fFa71c4AF7d2eEb5aE779FA`](https://robinhoodchain.blockscout.com/address/0x732aEC9b9A52528f9fFa71c4AF7d2eEb5aE779FA)
+
 ## Credit
 
 Ship and dice loop inspired by Coup Ahoo © Antti Haavikko (js13k). Chest, token and chain original. Sprites and song not ported.

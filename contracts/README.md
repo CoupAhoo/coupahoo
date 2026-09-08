@@ -16,29 +16,10 @@ Fee recipient for `$AHOO`. One LetsCash recipient. Split is inside:
 
 `socials()` returns name, ticker, description, website, twitter, telegram, github.
 
-## Remix deploy
+Live: [`0x732aEC9b9A52528f9fFa71c4AF7d2eEb5aE779FA`](https://robinhoodchain.blockscout.com/address/0x732aEC9b9A52528f9fFa71c4AF7d2eEb5aE779FA)
 
-1. Open [Remix](https://remix.ethereum.org).
-2. New file `Chest.sol`. Paste [contracts/Chest.sol](https://github.com/CoupAhoo/coupahoo/blob/main/contracts/Chest.sol).
-3. Compiler: `0.8.24` · Enable optimization · runs `200` · EVM `cancun`.
-4. Compile.
-5. Deploy & Run: Environment **Injected Provider**. Network **Robinhood Chain (4663)**.
-6. Constructor `cabin_` = `0x732aEC9b9A52528f9fFa71c4AF7d2eEb5aE779FA` (studio). Never the LetsCash fee field.
-7. Deploy. Confirm. Save the address.
-8. Verify on [Blockscout](https://robinhoodchain.blockscout.com) — single file, MIT, same compiler settings.
-9. Read: `cabin()` equals studio EOA. `pots()` is zeros. `socials()` shows The Chest + t.me/CoupAhoo.
-10. Paste the address into `src/lib/game.ts` as `CHEST_CA`. Push.
+Cabin: `0xCFFaF07B22f5E2B60712Ae0576f130034Cc60918`
 
-## After The Chest is live
+`name()` is The Chest. `telegram()` is https://t.me/CoupAhoo.
 
-LetsCash launch `$AHOO` last. Fee recipient = **The Chest** address. Tax 3%. Custom quote empty. Developer buy your call.
-
-Do not put an EOA in the LetsCash fee form.
-
-## Constructor ABI
-
-```
-000000000000000000000000732aec9b9a52528f9ffa71c4af7d2eeb5ae779fa
-```
-
-Cabin: `0x732aEC9b9A52528f9fFa71c4AF7d2eEb5aE779FA`
+LetsCash: fee recipient = **The Chest** address above. Tax 3%. Not cabin. Not any EOA.
