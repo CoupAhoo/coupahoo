@@ -1,8 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CONTRACTS, EPOCH_SECONDS, FEE, explorerAddress, shortCa } from "@/lib/game";
-import { Dude } from "@/components/ahoo/dude";
 import { Sea } from "@/components/ahoo/sea";
+import { Ship } from "@/components/ahoo/ship";
 import { TitleMark } from "@/components/ahoo/title-mark";
+
+const HOLD_CARGO = [
+  { id: "hold-1", pips: 6, plated: true },
+  { id: "hold-2", pips: 5, plated: false },
+  { id: "hold-3", pips: 3, plated: true },
+];
 
 export const Route = createFileRoute("/hold")({ component: HoldPage });
 
@@ -13,11 +19,8 @@ function HoldPage() {
       <Sea compact>
         <div className="flex flex-col items-center gap-2 py-2">
           <TitleMark size="sm" />
-          <div className="flex items-end gap-6">
-            <Dude role="captain" size={88} />
-            <Dude role="carpenter" size={72} />
-          </div>
-          <p className="stroke-title font-display text-xl">The Hold</p>
+          <Ship name="The Hold" sail="magenta" cargo={HOLD_CARGO} compact captain />
+          <p className="stroke-title font-display text-xl">Fees land here</p>
         </div>
       </Sea>
       <header>

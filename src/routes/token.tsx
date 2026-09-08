@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CaStrip } from "@/components/ahoo/ca-strip";
-import { Dude } from "@/components/ahoo/dude";
 import { Sea } from "@/components/ahoo/sea";
+import { Ship } from "@/components/ahoo/ship";
 import { TitleMark } from "@/components/ahoo/title-mark";
 import {
   CHAIN,
@@ -15,6 +15,12 @@ import {
   shortCa,
   SITE,
 } from "@/lib/game";
+
+const TOKEN_CARGO = [
+  { id: "tok-1", pips: 6, plated: false },
+  { id: "tok-2", pips: 4, plated: false },
+  { id: "tok-3", pips: 4, plated: true },
+];
 
 export const Route = createFileRoute("/token")({ component: TokenPage });
 
@@ -35,7 +41,7 @@ function TokenPage() {
       <Sea compact>
         <div className="flex flex-col items-center gap-2 py-2">
           <TitleMark size="sm" />
-          <Dude role="captain" posing size={96} />
+          <Ship name={`$${TICKER}`} sail="orange" cargo={TOKEN_CARGO} compact captain posing />
         </div>
       </Sea>
       <header>
