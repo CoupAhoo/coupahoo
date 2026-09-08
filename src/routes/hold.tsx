@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { CONTRACTS, EPOCH_SECONDS, FEE, explorerAddress, shortCa } from "@/lib/game";
+import { EPOCH_SECONDS, FEE } from "@/lib/game";
+import { CaStrip } from "@/components/ahoo/ca-strip";
 import { Sea } from "@/components/ahoo/sea";
 import { Ship } from "@/components/ahoo/ship";
 import { TitleMark } from "@/components/ahoo/title-mark";
@@ -13,7 +14,6 @@ const HOLD_CARGO = [
 export const Route = createFileRoute("/hold")({ component: HoldPage });
 
 function HoldPage() {
-  const hold = CONTRACTS.hold;
   return (
     <div className="mx-auto flex max-w-3xl flex-col gap-6">
       <Sea compact>
@@ -33,19 +33,7 @@ function HoldPage() {
         </p>
       </header>
 
-      <section className="ahoo-card p-5">
-        <h2 className="font-display text-2xl">Contract</h2>
-        {hold ? (
-          <p className="mt-2 font-mono text-sm">
-            {shortCa(hold)}{" "}
-            <a className="underline" href={explorerAddress(hold)} target="_blank" rel="noreferrer">
-              Explorer
-            </a>
-          </p>
-        ) : (
-          <p className="mt-2 text-ink/70">Hold address posts after Remix deploy. Empty until then.</p>
-        )}
-      </section>
+      <CaStrip />
 
       <section className="grid gap-3 sm:grid-cols-3">
         {[

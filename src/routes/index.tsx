@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CaStrip } from "@/components/ahoo/ca-strip";
+import { Socials } from "@/components/ahoo/socials";
 import { Dude } from "@/components/ahoo/dude";
 import { Ship } from "@/components/ahoo/ship";
 import { Sea } from "@/components/ahoo/sea";
@@ -38,6 +39,10 @@ function Home() {
       <p className="mx-auto max-w-2xl text-center text-lg font-extrabold leading-relaxed">{LINE}</p>
 
       <CaStrip />
+      <div className="ahoo-card flex flex-wrap items-center justify-between gap-3 px-4 py-3">
+        <p className="font-display text-lg tracking-wide">Socials</p>
+        <Socials />
+      </div>
 
       <section className="grid gap-4 md:grid-cols-3">
         {[

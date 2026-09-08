@@ -2,19 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { CaStrip } from "@/components/ahoo/ca-strip";
 import { Sea } from "@/components/ahoo/sea";
 import { Ship } from "@/components/ahoo/ship";
+import { Socials } from "@/components/ahoo/socials";
 import { TitleMark } from "@/components/ahoo/title-mark";
-import {
-  CHAIN,
-  CONTRACTS,
-  FEE,
-  GITHUB,
-  LETSCASH_PAD,
-  TICKER,
-  X_URL,
-  explorerAddress,
-  shortCa,
-  SITE,
-} from "@/lib/game";
+import { CHAIN, FEE, LETSCASH_PAD, TICKER } from "@/lib/game";
 
 const TOKEN_CARGO = [
   { id: "tok-1", pips: 6, plated: false },
@@ -68,35 +58,15 @@ function TokenPage() {
         </table>
       </section>
       <section className="ahoo-card p-5">
-        <h2 className="font-display text-2xl">Addresses</h2>
-        <ul className="mt-3 space-y-2 font-mono text-sm">
-          <li>Token {CONTRACTS.token ? shortCa(CONTRACTS.token) : "— pending"}</li>
-          <li>
-            Hold {CONTRACTS.hold ? shortCa(CONTRACTS.hold) : "— pending"}
-            {CONTRACTS.hold ? (
-              <>
-                {" "}
-                <a className="underline" href={explorerAddress(CONTRACTS.hold)}>
-                  explorer
-                </a>
-              </>
-            ) : null}
-          </li>
-        </ul>
-        <div className="mt-4 flex flex-wrap gap-3 text-sm font-semibold">
+        <h2 className="font-display text-2xl">Socials</h2>
+        <div className="mt-3">
+          <Socials />
+        </div>
+        <p className="mt-4 text-sm font-semibold">
           <a className="underline" href={LETSCASH_PAD} target="_blank" rel="noreferrer">
             LetsCash
           </a>
-          <a className="underline" href={X_URL} target="_blank" rel="noreferrer">
-            X
-          </a>
-          <a className="underline" href={GITHUB} target="_blank" rel="noreferrer">
-            GitHub
-          </a>
-          <a className="underline" href={SITE}>
-            Site
-          </a>
-        </div>
+        </p>
       </section>
     </div>
   );

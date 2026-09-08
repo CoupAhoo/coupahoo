@@ -9,8 +9,16 @@ export const TAGLINE = "Roll cargo. Take the fleet. Fear thirteen.";
 export const SITE = "https://coupahoo.lol";
 export const X_HANDLE = "CoupAhoo";
 export const X_URL = "https://x.com/CoupAhoo";
+export const TG_HANDLE = "CoupAhoo";
+export const TG_URL = "https://t.me/CoupAhoo";
 export const GITHUB = "https://github.com/CoupAhoo/coupahoo";
 export const LETSCASH_PAD = "https://www.letscash.fun";
+
+export const SOCIALS = [
+  { label: "X", href: X_URL, handle: `@${X_HANDLE}` },
+  { label: "Telegram", href: TG_URL, handle: `@${TG_HANDLE}` },
+  { label: "GitHub", href: GITHUB, handle: "CoupAhoo/coupahoo" },
+] as const;
 
 export const CHAIN = {
   id: 4663,

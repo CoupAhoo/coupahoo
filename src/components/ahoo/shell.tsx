@@ -3,6 +3,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { NAME, SLOGAN, ATTRIBUTION, SITE } from "@/lib/game";
 import { WalletBar } from "@/components/ahoo/wallet-bar";
 import { Dude } from "@/components/ahoo/dude";
+import { Socials } from "@/components/ahoo/socials";
 
 const NAV = [
   { to: "/", label: "Home" },
@@ -51,6 +52,9 @@ export function Shell({ children }: { children: ReactNode }) {
             </span>
           </nav>
         </div>
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 pb-2">
+          <Socials compact />
+        </div>
       </header>
       <main
         className={
@@ -62,16 +66,19 @@ export function Shell({ children }: { children: ReactNode }) {
         {children}
       </main>
       <footer className="border-t-[3px] border-ink bg-paper">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-5 text-xs text-ink/70 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-5 text-xs text-ink/70 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-3">
             <Dude role="captain" size={36} />
             <p>{ATTRIBUTION}</p>
           </div>
-          <p>
-            <a className="font-semibold text-ink" href={SITE}>
-              {SITE.replace("https://", "")}
-            </a>
-          </p>
+          <div className="flex flex-col items-start gap-2 sm:items-end">
+            <Socials />
+            <p>
+              <a className="font-semibold text-ink" href={SITE}>
+                {SITE.replace("https://", "")}
+              </a>
+            </p>
+          </div>
         </div>
       </footer>
     </div>
