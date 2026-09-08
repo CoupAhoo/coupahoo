@@ -41,7 +41,7 @@ Not cabin. Not any EOA.
 Paste into `TOKEN_CA`. Push.
 
 ## THEN 7 — Launch reply
-CA + LetsCash link + explorer. No fake TVL.
+`SECOND.md`. Paste token CA and LetsCash link. Cover optional. No fake TVL.
 
 ## Never
 Token before The Chest. EOA as fee recipient. Fake pots.

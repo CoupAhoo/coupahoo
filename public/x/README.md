@@ -16,6 +16,6 @@ Copy:
 3. `TELEGRAM.md` → TG channel. Same facts, longer. Attach `cover.png`. No CA.
 4. `ARTICLE.md` → X Article. Cover `cover.png`.
 5. `THREAD.md` → optional thread.
-6. `PIN.md` → pin after launch, then swap in CA.
+7. `SECOND.md` → launch reply. Paste token CA + LetsCash yourself.
 
 Art is the Haavikko-ported SVGs in `/ahoo` (captain, scene-hero, scene-battle, sky, water, clouds). Attribution stays in those files.
