@@ -8,6 +8,7 @@ Upload on https://x.com/CoupAhoo
 | `banner.png` | Header | 1500×600 (5:2). X crops to 3:1 — keep the hull in the middle. |
 | `cover.png` | Article / first-post image | 1500×600 (5:2) |
 | `post-4x3.png` | Second post / 4:3 | 1600×1200 |
+| `howto.png` | How to play | 1500×1000 (3:2) |
 | `cover-square.png` | Square cover / extra | 1000×1000 from `cover-1000.svg` |
 
 Copy:
