@@ -5,6 +5,7 @@ import {
   CONTRACTS,
   TICKER,
   explorerAddress,
+  explorerToken,
   letscashToken,
 } from "@/lib/game";
 
@@ -13,9 +14,10 @@ type Slot = {
   ca: string;
   pending: string;
   trade?: boolean;
+  token?: boolean;
 };
 
-function CaRow({ label, ca, pending, trade }: Slot) {
+function CaRow({ label, ca, pending, trade, token }: Slot) {
   const [copied, setCopied] = useState(false);
   async function copy() {
     if (!ca) return;
@@ -40,7 +42,7 @@ function CaRow({ label, ca, pending, trade }: Slot) {
           >
             {copied ? "Copied" : "Copy"}
           </button>
-          <a className="text-sm font-semibold underline" href={explorerAddress(ca)} target="_blank" rel="noreferrer">
+          <a className="text-sm font-semibold underline" href={token ? explorerToken(ca) : explorerAddress(ca)} target="_blank" rel="noreferrer">
             Explorer
           </a>
           {trade ? (
@@ -67,7 +69,7 @@ export function CaStrip() {
           {CHAIN.name} ({CHAIN.id})
         </p>
       </div>
-      <CaRow label={`$${TICKER}`} ca={CONTRACTS.token} pending="pending — paste at LetsCash launch" trade />
+      <CaRow label={`$${TICKER}`} ca={CONTRACTS.token} pending="pending — paste at LetsCash launch" trade token />
       <CaRow label={CHEST_NAME} ca={CONTRACTS.chest} pending="pending — paste after Remix deploy" />
     </section>
   );

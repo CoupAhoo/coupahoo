@@ -4,7 +4,7 @@ import { Sea } from "@/components/ahoo/sea";
 import { Ship } from "@/components/ahoo/ship";
 import { Socials } from "@/components/ahoo/socials";
 import { TitleMark } from "@/components/ahoo/title-mark";
-import { CHAIN, CHEST_NAME, FEE, LETSCASH_PAD, TICKER } from "@/lib/game";
+import { CHAIN, CHEST_NAME, FEE, LETSCASH_PAD, TOKEN_CA, TICKER, letscashToken } from "@/lib/game";
 
 const TOKEN_CARGO = [
   { id: "tok-1", pips: 6, plated: false },
@@ -63,8 +63,8 @@ function TokenPage() {
           <Socials />
         </div>
         <p className="mt-4 text-sm font-semibold">
-          <a className="underline" href={LETSCASH_PAD} target="_blank" rel="noreferrer">
-            LetsCash
+          <a className="underline" href={TOKEN_CA ? letscashToken(TOKEN_CA) : LETSCASH_PAD} target="_blank" rel="noreferrer">
+            {TOKEN_CA ? "Trade on LetsCash" : "LetsCash"}
           </a>
         </p>
       </section>

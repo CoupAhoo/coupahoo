@@ -34,7 +34,7 @@ export const POOL_MANAGER = "0x8366a39CC670B4001A1121B8F6A443A643e40951";
 
 /** Studio EOA. Constructor cabin_ on Chest.sol. Never the LetsCash fee recipient. */
 export const CABIN = "0xCFFaF07B22f5E2B60712Ae0576f130034Cc60918";
-/** Empty until the LetsCash launch is pasted in. */
+/** Paste LetsCash $AHOO here (checksummed 0x…). One line lights the site. */
 export const TOKEN_CA = "";
 /** The Chest — Remix deploy. */
 export const CHEST_CA = "0x732aEC9b9A52528f9fFa71c4AF7d2eEb5aE779FA";
@@ -81,4 +81,8 @@ export function shortCa(addr: string) {
 
 export function letscashToken(addr: string) {
   return addr ? `https://www.letscash.fun/token/${addr}` : LETSCASH_PAD;
+}
+
+export function isCa(addr: string) {
+  return /^0x[a-fA-F0-9]{40}$/.test(addr);
 }
