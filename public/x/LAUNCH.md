@@ -17,6 +17,7 @@ Do not skip. Token is last.
 5. Website: https://coupahoo.lol
 6. Location: Robinhood Chain
 7. Pin nothing yet, or pin `PIN.md` without CA.
+8. Telegram channel: paste `TELEGRAM.md`. Image: `cover.png`. No CA.
 
 ## 2. Cabin
 Studio EOA. This is constructor `cabin` on Hold.sol.

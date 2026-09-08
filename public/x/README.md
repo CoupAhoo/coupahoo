@@ -12,9 +12,10 @@ Upload on https://x.com/CoupAhoo
 Copy:
 
 1. `BIO.md` → profile bio (first line only). Website `https://coupahoo.lol`. Location `Robinhood Chain`.
-2. `FIRST.md` → first post (mechanics + infrastructure). Attach `cover.png`. No CA.
-3. `ARTICLE.md` → X Article. Cover `cover.png`.
-4. `THREAD.md` → optional thread.
-5. `PIN.md` → pin after launch, then swap in CA.
+2. `FIRST.md` → first X post (mechanics + infrastructure). Attach `cover.png`. No CA.
+3. `TELEGRAM.md` → TG channel. Same facts, longer. Attach `cover.png`. No CA.
+4. `ARTICLE.md` → X Article. Cover `cover.png`.
+5. `THREAD.md` → optional thread.
+6. `PIN.md` → pin after launch, then swap in CA.
 
 Art is the Haavikko-ported SVGs in `/ahoo` (captain, scene-hero, scene-battle, sky, water, clouds). Attribution stays in those files.
