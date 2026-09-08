@@ -10,6 +10,7 @@ const NAV = [
   { to: "/play", label: "Play" },
   { to: "/chest", label: "Chest" },
   { to: "/lore", label: "Lore" },
+  { to: "/article", label: "Article" },
   { to: "/token", label: "Token" },
 ] as const;
 

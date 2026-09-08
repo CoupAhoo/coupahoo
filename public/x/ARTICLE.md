@@ -1,59 +1,61 @@
-# Don't roll thirteen.
+Dice, fees, and The Chest
 
-Coup Ahoo is a ship made of dice. You play it in the browser. The token comes after The Chest is on-chain. This is the loop and the pipes.
+Coup Ahoo is a dice-pirate game with a token on LetsCash. The loop is local. The prize is on-chain. This is how the hull, the tax, and The Chest fit.
 
-## The hull
+Play: https://coupahoo.lol
 
-You start by rolling three six-siders. That stack is the sloop.
+The story
 
-- Each pip is a hit point.
-- Each die is a gun. More crates, more shots.
-- Empty the deck and you sink.
-- If the pips sum to thirteen you are cursed. The first ball of every volley goes overboard. Thirteen is not a score. It is a hole.
+You are done with the fleet. One sloop at a time, you take the channel. Cargo is stacked on the deck — dice. Their pips are hit points. Their count is how many balls you throw. Empty decks sink. Thirteen is not a score. It is a hole.
 
-Combat dice are 0 / 0 / 1 / 1 / 2 / 2. You roll a volley, keep or reroll, then click their cargo. Plated crates only take 1. Between fights: merchants, shipwrights, sailors in dinghies, storms, free crates in the drink. Hire crew if you have gold.
+The ship-and-dice loop is inspired by Antti Haavikko's js13k Coup Ahoo. The Chest, $AHOO, and the chain side are original. Sprites and the original song were not ported.
 
-- Gunner — first shot each volley +1.
-- Carpenter — after a win, patches the weakest cargo +1.
-- Lookout — enemy wastes their first shot.
-- Cook — +3 gold every ship you sink.
+How you play
 
-Take the fleet one sloop at a time. Nine encounters. Last one is the flagship. Log a run if The Chest is live. One log per wallet per epoch.
+1. Roll 3d6. That is your ship. You may reroll. KEEP locks the hull. Pips = HP. Dice count = guns.
+2. Hull 13 is cursed. The first ball of every volley goes overboard.
+3. Nine watches. Odd numbers are fights. Even numbers are events. The last is the flagship.
+4. Combat dice are 0 / 0 / 1 / 1 / 2 / 2. Keep the hits. Reroll the blanks once. Then click their cargo.
+5. A plated crate shrugs 1 damage. Killing a die kills a gun — their next volley is smaller.
+6. Events: merchants, shipwrights, storms, sailors in dinghies. Plate a crate. Hire a gunner, lookout, carpenter, or cook. Dump cargo if the sea stands up.
+7. Empty deck sinks. Take the fleet, or the sea takes you.
 
-Play: https://coupahoo.lol/play
+Crew
 
-## The pipes
+Gunner — first shot of each volley +1.
+Lookout — enemy wastes their first shot.
+Carpenter — after a win, patches the weakest crate +1.
+Cook — +3 gold every ship you sink.
 
-$AHOO launches on LetsCash, Robinhood Chain (id 4663). Quote is ETH. LP locks at launch. Trade tax is 3% of the ETH leg.
+Score
 
-LetsCash keeps 0.3% as platform. 2.7% goes to The Chest. One recipient in the launch form.
+Ships sunk × 250, gold × 12, hull × 8. A clean hull (not 13) adds 130. Clearing the flagship adds 400. The number on GAME OVER is what you can log to The Chest.
 
-The Chest splits every wei it receives:
+$AHOO
 
-| Slice | Share | What it does |
-| --- | --- | --- |
-| Prize | 70% | Best logged run of the 15-minute epoch. 80% of that pot pays out. 1% of the payout is a closer tip. Rest rolls. |
-| Drip | 20% | Accrues on the contract. Cabin may `sendDrip` to a later distributor. Not a claim. |
-| Cabin | 10% | Studio. `withdrawCabin` only. |
+One billion supply. Quote is ETH. Launch is LetsCash. LP locked at launch. Every trade pays 3% of the ETH leg. LetsCash keeps 0.3%. The remaining 2.7% is the creator fee — it does not go to a wallet. It hits The Chest.
 
-`settle` is permissionless. Anyone may close a finished epoch. Empty epochs emit and move on. The prize that did not pay stays in the pot.
+CA: 0x91DBFfB64Fe301535689e5679625af6F70beEDcc
+Trade: https://www.letscash.fun/token/0x91DBFfB64Fe301535689e5679625af6F70beEDcc
 
-Cabin is set in the constructor. It cannot be the LetsCash fee recipient. Drip is not a holder airdrop until cabin sends it. If we have not sent it, it is still sitting in The Chest.
+The Chest
 
-## What is live, what is not
+A contract. Incoming ETH splits 70% prize, 20% drip, 10% cabin. Epochs last 15 minutes. One log per wallet per epoch. Best score on the board can take the prize. Anyone may settle. No keeper.
 
-Live now: the game, the site, the GitHub, this account.
+Settle pays 80% of the prize pot. 20% rolls to the next watch.
+The caller who settles takes 1% of that payout. The rest goes to the winner.
+Empty epochs emit and roll. Cabin withdraws only from the cabin address.
+Drip accrues. Cabin can forward it later. It is not a public claim yet.
 
-Not live until we paste them: The Chest, token CA. We do not invent TVL.
+Chest: 0x732aEC9b9A52528f9fFa71c4AF7d2eEb5aE779FA
 
-Order: cabin EOA → Remix `Chest.sol` on 4663 → verify on Blockscout → The Chest on the site → LetsCash last, fee recipient = The Chest, tax 3% → token CA on the site → this post gets the CA.
+What we are building
 
-## Attribution
+A crew that actually plays. The site, the loop, and The Chest are live. Next watch is a DexScreener paid listing — step by step, not a jump. Play it. If a detail is wrong, say so. That is how a deck is built.
 
-Ship & dice loop inspired by Coup Ahoo © Antti Haavikko (js13k). Chest, token and chain original. Sprites and song not ported.
+Follow. We're not done.
 
-Site: https://coupahoo.lol
-Play: https://coupahoo.lol/play
-Chest: https://coupahoo.lol/chest
-Token: https://coupahoo.lol/token
-GitHub: https://github.com/CoupAhoo/coupahoo
+https://coupahoo.lol
+https://x.com/CoupAhoo
+https://t.me/CoupAhoo
+https://github.com/CoupAhoo/coupahoo
