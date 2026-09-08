@@ -17,7 +17,7 @@ Fee recipient for `$AHOO` is this contract. One LetsCash recipient. Split is ins
 1. Deploy `Hold.sol` with constructor arg = cabin (studio) EOA.
 2. Verify on Blockscout from Remix (single file, MIT).
 3. Paste Hold CA into `src/lib/game.ts` as `HOLD_CA`.
-4. LetsCash launch `$AHOO` last. Fee recipient = **Hold CA**. Tax 5%. One recipient. Custom quote empty. Developer buy your call.
+4. LetsCash launch `$AHOO` last. Fee recipient = **Hold CA**. Tax 3%. One recipient. Custom quote empty. Developer buy your call.
 5. Paste token CA into `TOKEN_CA`.
 
 Do not put an EOA in the LetsCash fee form.

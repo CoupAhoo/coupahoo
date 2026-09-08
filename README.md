@@ -10,7 +10,7 @@ Cargo dice are hit points and guns. Keep or roll your volley, then shoot their c
 
 ## Token
 
-LetsCash launch. 5% trade tax. Fee recipient is **The Hold** contract, not a wallet. Split inside the Hold: 70% prize / 20% drip / 10% cabin.
+LetsCash launch. 3% trade tax (0.3% platform, 2.7% The Hold). Split inside the Hold: 70% prize / 20% drip / 10% cabin.
 
 CA posts at launch.
 

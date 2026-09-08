@@ -2,7 +2,7 @@
 pragma solidity ^0.8.24;
 
 /// @title The Hold — Coup Ahoo fee sink and epoch prize
-/// @notice LetsCash fee recipient. No EOA in the launch form.
+/// @notice LetsCash fee recipient for $AHOO.
 /// @dev Solidity 0.8.24, optimizer 200, EVM cancun. Remix on chain 4663.
 contract Hold {
     string public name = "The Hold";

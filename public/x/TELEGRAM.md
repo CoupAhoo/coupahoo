@@ -4,6 +4,7 @@ Coup Ahoo is a dice hull on Robinhood Chain. You play it now. $AHOO launches aft
 
 Play: https://coupahoo.lol
 X: https://x.com/CoupAhoo
+Telegram: https://t.me/CoupAhoo
 GitHub: https://github.com/CoupAhoo/coupahoo
 
 —— MECHANICS ——
@@ -34,11 +35,11 @@ Lore: https://coupahoo.lol/lore
 
 $AHOO · LetsCash · Robinhood Chain (4663) · quote ETH · LP locked at launch.
 
-Tax: 5% of the ETH leg.
-Platform keeps 0.3%.
-4.7% hits The Hold — a contract, not a wallet. One recipient in the LetsCash form. No EOA.
+Tax: 3% of the ETH leg.
+Platform 0.3%.
+2.7% to The Hold.
 
-The Hold split (inside the contract):
+The Hold split:
 
 70% prize — best logged run of each 15-minute epoch. Anyone may settle. No keeper. 80% of that pot pays. 1% of the payout is a closer tip. Rest rolls. Empty epochs emit and move on.
 
@@ -53,8 +54,8 @@ Token: https://coupahoo.lol/token
 
 Play is live.
 Hold deploys next (Remix, cabin in the constructor, verify on Blockscout).
-Token is last. Fee recipient = Hold CA only. Tax 5%. One recipient.
+Token is last. Fee recipient = Hold CA. Tax 3%.
 
-CA posts when LetsCash is live. No fake TVL. No wallet as the fee sink.
+CA posts when LetsCash is live.
 
 Ship & dice loop inspired by Coup Ahoo © Antti Haavikko (js13k). Hold, token and chain original. Sprites and song not ported.

@@ -27,9 +27,9 @@ function HoldPage() {
         <p className="font-display text-sm tracking-[0.2em] text-ink/50">THE HOLD</p>
         <h1 className="font-display text-5xl tracking-wide">Fees land here. Prize leaves here.</h1>
         <p className="mt-3 max-w-2xl text-lg leading-relaxed text-ink/80">
-          Every trade pays 5%. The platform keeps 0.3%. The rest hits The Hold — a contract with no
-          EOA in the LetsCash form. Epochs last {EPOCH_SECONDS / 60} minutes. Best run on the board
-          can take the prize. Anyone may settle. No keeper.
+          Every trade pays {FEE.taxBps / 100}%. The platform keeps {FEE.platformBps / 100}%. The rest
+          goes to The Hold. Epochs last {EPOCH_SECONDS / 60} minutes. Best run on the board can take
+          the prize. Anyone may settle. No keeper.
         </p>
       </header>
 

@@ -43,9 +43,9 @@ export const CONTRACTS = {
 } as const;
 
 export const FEE = {
-  taxBps: 500,
+  taxBps: 300,
   platformBps: 30,
-  creatorBps: 470,
+  creatorBps: 270,
   holdShare: {
     prizeBps: 7000,
     dripBps: 2000,

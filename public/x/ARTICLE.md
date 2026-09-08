@@ -24,9 +24,9 @@ Play: https://coupahoo.lol/play
 
 ## The pipes
 
-$AHOO launches on LetsCash, Robinhood Chain (id 4663). Quote is ETH. LP locks at launch. Trade tax is 5% of the ETH leg.
+$AHOO launches on LetsCash, Robinhood Chain (id 4663). Quote is ETH. LP locks at launch. Trade tax is 3% of the ETH leg.
 
-LetsCash keeps 0.3% as platform. The remaining 4.7% does not go to a wallet. It goes to The Hold — a Solidity contract. One recipient in the launch form. No EOA.
+LetsCash keeps 0.3% as platform. 2.7% goes to The Hold. One recipient in the launch form.
 
 The Hold splits every wei it receives:
 
@@ -44,9 +44,9 @@ Cabin is set in the constructor. It cannot be the LetsCash fee recipient. Drip i
 
 Live now: the game, the site, the GitHub, this account.
 
-Not live until we paste them: Hold CA, token CA. We do not invent TVL. We do not paste a wallet as the fee sink.
+Not live until we paste them: Hold CA, token CA. We do not invent TVL.
 
-Order: cabin EOA → Remix `Hold.sol` on 4663 → verify on Blockscout → Hold CA on the site → LetsCash last, fee recipient = Hold CA, tax 5%, one recipient → token CA on the site → this post gets the CA.
+Order: cabin EOA → Remix `Hold.sol` on 4663 → verify on Blockscout → Hold CA on the site → LetsCash last, fee recipient = Hold CA, tax 3% → token CA on the site → this post gets the CA.
 
 ## Attribution
 

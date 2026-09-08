@@ -21,7 +21,7 @@ function TokenPage() {
     ["Chain", `${CHAIN.name} (${CHAIN.id})`],
     ["Supply", "1,000,000,000"],
     ["Trade tax", `${FEE.taxBps / 100}% of the ETH leg`],
-    ["Platform", `${FEE.platformBps / 10}% LetsCash`],
+    ["Platform", `${FEE.platformBps / 100}% LetsCash`],
     ["The Hold", `${FEE.creatorBps / 100}% of every trade`],
     ["Quote", "ETH"],
     ["LP", "Locked at launch"],
@@ -38,8 +38,8 @@ function TokenPage() {
         <p className="font-display text-sm tracking-[0.2em] text-ink/50">${TICKER}</p>
         <h1 className="font-display text-5xl tracking-wide">The token is the wake.</h1>
         <p className="mt-3 text-lg leading-relaxed text-ink/80">
-          Launch on LetsCash. Fee recipient is The Hold — the contract, not a wallet. Split inside
-          the Hold is prize / drip / cabin.
+          Launch on LetsCash. {FEE.taxBps / 100}% tax. Platform {FEE.platformBps / 100}%. The rest
+          goes to The Hold — prize, drip, cabin.
         </p>
       </header>
       <CaStrip />

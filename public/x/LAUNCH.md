@@ -41,7 +41,7 @@ Optional: X Article = `ARTICLE.md` with `cover.png`.
 
 ## 6. LetsCash LAST
 - Name Coup Ahoo, ticker AHOO
-- Tax 5%
+- Tax 3%
 - Fee recipient = Hold CA only
 - Custom quote empty (ETH)
 - LP lock on

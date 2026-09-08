@@ -8,17 +8,17 @@ You roll 3d6. That stack is your ship. Pips are hit points. The number of dice i
 If the pips sum to 13 the hull is cursed. The first shot of every volley goes overboard. Plate a crate and it only takes 1. Hire a gunner and the first ball bites. Carpenter patches. Lookout makes them miss. Cook pays gold. Storms, merchants, shipwrights, sailors in dinghies. Take the fleet one sloop at a time.
 
 INFRASTRUCTURE
-Chain: Robinhood Chain (4663). Quote: ETH. Pad: LetsCash. Tax: 5% on the ETH leg. Platform keeps 0.3%. 4.7% hits The Hold — a contract, not a wallet. One recipient in the form. No EOA.
+Chain: Robinhood Chain (4663). Quote: ETH. Pad: LetsCash. Tax: 3% on the ETH leg. Platform 0.3%. 2.7% to The Hold.
 
 Inside The Hold:
 • 70% prize — best logged run of each 15-minute epoch. Anyone may settle. No keeper. 80% of the pot pays, 1% to the closer, rest rolls.
 • 20% drip — accrues on the contract. Cabin may send it later. Not a claim button.
 • 10% cabin — studio. Withdraw only from cabin.
 
-Play now. Token last. CA posts when LetsCash is live. No fake TVL.
+Play now. Token last. CA posts when LetsCash is live.
 
 Play: https://coupahoo.lol
+Telegram: https://t.me/CoupAhoo
 GitHub: https://github.com/CoupAhoo/coupahoo
-Hold: Remix after cabin. Token: last.
 
 Ship & dice loop inspired by Coup Ahoo © Antti Haavikko (js13k). Hold, token and chain original.
