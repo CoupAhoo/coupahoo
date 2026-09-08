@@ -39,6 +39,7 @@ function Play() {
   const [muted, setMuted] = useState(false);
   const [logState, setLogState] = useState<"idle" | "busy" | "ok" | "err">("idle");
   const [logMsg, setLogMsg] = useState("");
+  const [boom, setBoom] = useState(0);
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
@@ -135,16 +136,20 @@ function Play() {
           ) : null}
 
           {inCombat ? (
-            <div className="grid flex-1 items-end gap-2 py-2 lg:grid-cols-2">
-              <Ship
-                name="You"
-                sail="orange"
-                cargo={run.cargo}
-                crew={run.crew}
-                facing="right"
-                captain
-                sunk={run.phase === "defeat"}
-              />
+            <div className={`relative grid flex-1 items-end gap-2 py-2 lg:grid-cols-2 ${boom ? "hit-pop" : ""}`}>
+              <div className={`relative ${boom ? "recoil" : ""}`}>
+                <Ship
+                  name="You"
+                  sail="orange"
+                  cargo={run.cargo}
+                  crew={run.crew}
+                  facing="right"
+                  captain
+                  sunk={run.phase === "defeat"}
+                />
+                {boom ? <span key={`m${boom}`} className="muzzle" style={{ right: "8%", top: "38%" }} /> : null}
+                {boom ? <span key={`b${boom}`} className="ball-shot" style={{ right: "6%", top: "44%" }} /> : null}
+              </div>
               <Ship
                 name={run.enemy!.name}
                 sail={run.enemy!.sail}
@@ -153,7 +158,15 @@ function Play() {
                 angry
                 crown={run.encounter === run.totalEncounters}
                 aim={run.phase === "combat-aim"}
-                onDieClick={run.phase === "combat-aim" ? shoot : undefined}
+                onDieClick={
+                  run.phase === "combat-aim"
+                    ? (id) => {
+                        setBoom((n) => n + 1);
+                        window.setTimeout(() => setBoom(0), 320);
+                        shoot(id);
+                      }
+                    : undefined
+                }
                 sunk={run.phase === "victory"}
               />
             </div>

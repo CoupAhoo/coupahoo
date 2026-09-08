@@ -43,7 +43,11 @@ export const sfx = {
     beep(330, 0.08);
   },
   keep: () => beep(440, 0.05, "triangle"),
-  hit: () => beep(160, 0.1, "sawtooth", 0.06),
+  hit: () => {
+    beep(70, 0.07, "sawtooth", 0.09);
+    beep(140, 0.05, "square", 0.05);
+    setTimeout(() => beep(50, 0.12, "sawtooth", 0.06), 40);
+  },
   win: () => {
     beep(392, 0.08);
     setTimeout(() => beep(523, 0.12), 80);

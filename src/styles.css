@@ -139,6 +139,53 @@
   animation: cursepulse 1.1s ease-in-out infinite;
 }
 
+@keyframes muzzle {
+  0% { opacity: 1; transform: scale(0.3) rotate(-8deg); }
+  100% { opacity: 0; transform: scale(1.8) rotate(12deg); }
+}
+@keyframes ball-fly {
+  0% { transform: translate(0, 0) scale(1); opacity: 1; }
+  100% { transform: translate(42vw, -12px) scale(0.7); opacity: 0; }
+}
+@keyframes recoil {
+  0%, 100% { transform: translateX(0); }
+  35% { transform: translateX(-10px); }
+}
+@keyframes recoil-left {
+  0%, 100% { transform: translateX(0); }
+  35% { transform: translateX(10px); }
+}
+@keyframes hit-pop {
+  0% { transform: scale(1); filter: brightness(1); }
+  40% { transform: scale(1.04); filter: brightness(1.35); }
+  100% { transform: scale(1); filter: brightness(1); }
+}
+
+.muzzle {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  border-radius: 999px;
+  background: radial-gradient(circle, #fff8e7 0%, #ff3 35%, #ee9922 60%, transparent 70%);
+  pointer-events: none;
+  animation: muzzle 0.28s ease-out forwards;
+  z-index: 8;
+}
+.ball-shot {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: #111;
+  border: 3px solid #000;
+  pointer-events: none;
+  z-index: 9;
+  animation: ball-fly 0.32s linear forwards;
+}
+.recoil { animation: recoil 0.28s ease-out; }
+.recoil-left { animation: recoil-left 0.28s ease-out; }
+.hit-pop { animation: hit-pop 0.28s ease-out; }
+
 .stroke-title {
   color: #fff;
   -webkit-text-stroke: 0.1em #000;
