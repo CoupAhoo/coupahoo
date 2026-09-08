@@ -34,8 +34,8 @@ export const POOL_MANAGER = "0x8366a39CC670B4001A1121B8F6A443A643e40951";
 
 /** Studio EOA. Constructor cabin_ on Chest.sol. Never the LetsCash fee recipient. */
 export const CABIN = "0xCFFaF07B22f5E2B60712Ae0576f130034Cc60918";
-/** Paste LetsCash $AHOO here (checksummed 0x…). One line lights the site. */
-export const TOKEN_CA = "";
+/** LetsCash $AHOO. */
+export const TOKEN_CA = "0x91DBFfB64Fe301535689e5679625af6F70beEDcc";
 /** The Chest — Remix deploy. */
 export const CHEST_CA = "0x732aEC9b9A52528f9fFa71c4AF7d2eEb5aE779FA";
 export const CHEST_NAME = "The Chest";

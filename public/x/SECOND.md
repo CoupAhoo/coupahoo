@@ -1,10 +1,10 @@
-Image: post-4x3.png (4:3). Paste CA and LetsCash, then post.
+Image: post-4x3.png (4:3).
 
 $AHOO is live.
 
-CA:
+CA: 0x91DBFfB64Fe301535689e5679625af6F70beEDcc
 
-LetsCash:
+LetsCash: https://www.letscash.fun/token/0x91DBFfB64Fe301535689e5679625af6F70beEDcc
 
 The Chest (fee recipient):
 0x732aEC9b9A52528f9fFa71c4AF7d2eEb5aE779FA

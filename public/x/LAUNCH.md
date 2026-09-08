@@ -11,7 +11,7 @@ Token is last. Do not skip.
 - TG channel @CoupAhoo — caption in TELEGRAM.md (under 1024)
 - Chest.sol deployed: `0x732aEC9b9A52528f9fFa71c4AF7d2eEb5aE779FA`
 - Cabin on-chain: `0xCFFaF07B22f5E2B60712Ae0576f130034Cc60918`
-- TOKEN_CA empty on purpose
+- TOKEN_CA `0x91DBFfB64Fe301535689e5679625af6F70beEDcc`
 
 ## Assets
 - Avatar https://coupahoo.lol/x/logo.png
@@ -37,11 +37,11 @@ FIRST.md + cover.png. No token CA. “CA posts at launch.”
 Name Coup Ahoo · ticker AHOO · tax 3% · fee recipient = The Chest only · quote ETH · LP lock.
 Not cabin. Not any EOA.
 
-## THEN 6 — Token CA
-Paste into `TOKEN_CA`. Push.
+## DONE 6 — Token CA
+`0x91DBFfB64Fe301535689e5679625af6F70beEDcc`
 
-## THEN 7 — Launch reply
-`SECOND.md`. Paste token CA and LetsCash link. Cover optional. No fake TVL.
+## NOW 7 — Launch reply
+`SECOND.md` is filled. Cover `post-4x3.png`. No fake TVL.
 
 ## Never
 Token before The Chest. EOA as fee recipient. Fake pots.
