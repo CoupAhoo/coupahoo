@@ -1,4 +1,4 @@
-import { CHAIN } from "@/lib/game";
+import { CHAIN, CHEST_CA } from "@/lib/game";
 
 type Eip1193 = {
   request: (args: { method: string; params?: unknown[] }) => Promise<unknown>;
@@ -78,4 +78,26 @@ async function ensureChain(p: Eip1193) {
 
 export function shortAddr(addr: string) {
   return `${addr.slice(0, 6)}…${addr.slice(-4)}`;
+}
+
+/** logRun(uint64,bytes32) on The Chest. */
+const LOG_RUN = "0xc5956af3";
+
+export async function logRunToChest(score: number, seed: number): Promise<string> {
+  if (!CHEST_CA) throw new Error("The Chest is not live.");
+  const p = injected();
+  if (!p) throw new Error("No wallet found.");
+  await ensureChain(p);
+  const accs = (await p.request({ method: "eth_requestAccounts" })) as string[];
+  const from = accs[0];
+  if (!from) throw new Error("No account.");
+  const n = Math.max(0, Math.min(0xffffffff, Math.floor(score)));
+  const seedHex = ((seed >>> 0) >>> 0).toString(16).padStart(16, "0");
+  const hash = n.toString(16).padStart(48, "0") + seedHex; // 32 bytes
+  const data = `${LOG_RUN}${n.toString(16).padStart(64, "0")}${hash}`;
+  const tx = (await p.request({
+    method: "eth_sendTransaction",
+    params: [{ from, to: CHEST_CA, data, value: "0x0" }],
+  })) as string;
+  return tx;
 }

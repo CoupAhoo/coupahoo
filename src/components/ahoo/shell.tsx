@@ -19,7 +19,7 @@ export function Shell({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-dvh bg-sky text-ink">
       <header className="sticky top-0 z-30 border-b-[3px] border-ink bg-paper/95 backdrop-blur-sm">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-3 gap-y-2 px-4 py-2">
+        <div className="mx-auto flex max-w-6xl flex-nowrap items-center gap-x-3 gap-y-2 overflow-x-auto px-4 py-2">
           <Link to="/" className="flex min-w-0 items-center gap-2 no-underline">
             <span className="relative grid h-10 w-10 shrink-0 place-items-center overflow-hidden">
               <Dude role="captain" crop="head" size={40} className="overflow-hidden" />

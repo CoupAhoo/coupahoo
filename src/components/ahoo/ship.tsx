@@ -72,7 +72,7 @@ export function Ship({
       {compact ? null : (
         <p className="mb-1 px-3 font-display text-sm tracking-wide text-ink/70">{name}</p>
       )}
-      <div className={`relative ${sunk ? "sink" : "bob"}`}>
+      <div className={`relative ${sunk ? "sink" : aim ? "" : "bob"}`}>
         <div className={flip ? "-scale-x-100" : ""}>
           <svg viewBox="-420 -640 840 700" className="h-auto w-full" aria-hidden="true" overflow="visible">
             <rect x="-10" y="-550" width="15" height="520" fill={MAST} stroke={INK} strokeWidth="7" strokeLinejoin="round" />
@@ -144,7 +144,7 @@ export function Ship({
           </svg>
 
           <div
-            className="absolute z-[3] flex flex-col-reverse flex-wrap-reverse content-end items-end gap-[2px]"
+            className="absolute z-[5] flex flex-col-reverse flex-wrap-reverse content-end items-end gap-[2px]"
             style={{ left: "24%", bottom: "36%", maxWidth: "38%", maxHeight: "44%" }}
           >
             {cargo.map((d) => (

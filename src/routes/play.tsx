@@ -13,8 +13,9 @@ import {
   nextShot,
   scoreOf,
 } from "@/lib/ahoo/engine";
-import { CURSE } from "@/lib/game";
+import { CURSE, CHEST_CA } from "@/lib/game";
 import { toggleMute, unlockSfx } from "@/lib/ahoo/sfx";
+import { logRunToChest } from "@/lib/ahoo/wallet";
 import { useRun } from "@/store/run";
 
 export const Route = createFileRoute("/play")({ component: Play });
@@ -36,6 +37,8 @@ function Play() {
   const reset = useRun((s) => s.reset);
 
   const [muted, setMuted] = useState(false);
+  const [logState, setLogState] = useState<"idle" | "busy" | "ok" | "err">("idle");
+  const [logMsg, setLogMsg] = useState("");
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
@@ -96,7 +99,7 @@ function Play() {
               {muted ? "Sound off" : "Mute"}
             </button>
             {run.phase !== "title" ? (
-              <button type="button" className="ahoo-btn ahoo-btn-keep !px-3 !py-1 !text-sm" onClick={reset}>
+              <button type="button" className="ahoo-btn ahoo-btn-keep !px-3 !py-1 !text-sm" onClick={() => { setLogState("idle"); setLogMsg(""); reset(); }}>
                 New run
               </button>
             ) : null}
@@ -279,9 +282,33 @@ function Play() {
               ) : null}
 
               {run.phase === "defeat" || run.phase === "over" ? (
-                <button type="button" className="ahoo-btn ahoo-btn-roll" onClick={start}>
-                  TRY AGAIN?
-                </button>
+                <>
+                  <button type="button" className="ahoo-btn ahoo-btn-roll" onClick={() => { setLogState("idle"); setLogMsg(""); start(); }}>
+                    TRY AGAIN?
+                  </button>
+                  {CHEST_CA ? (
+                    <button
+                      type="button"
+                      className="ahoo-btn ahoo-btn-keep !text-sm"
+                      disabled={logState === "busy" || logState === "ok"}
+                      onClick={() => {
+                        setLogState("busy");
+                        setLogMsg("");
+                        void logRunToChest(scoreOf(run), run.seed)
+                          .then(() => {
+                            setLogState("ok");
+                            setLogMsg("Logged to The Chest.");
+                          })
+                          .catch((e) => {
+                            setLogState("err");
+                            setLogMsg(e instanceof Error ? e.message : "Log failed");
+                          });
+                      }}
+                    >
+                      {logState === "ok" ? "Logged" : logState === "busy" ? "Logging…" : "Log to The Chest"}
+                    </button>
+                  ) : null}
+                </>
               ) : null}
 
               {run.phase.startsWith("combat") ? (
@@ -295,6 +322,7 @@ function Play() {
       </Sea>
 
       <p className="px-4 font-display text-lg tracking-wide sm:px-0">{run.log}</p>
+      {logMsg ? <p className="px-4 text-sm font-semibold sm:px-0">{logMsg}</p> : null}
       {cursed && run.phase !== "title" ? (
         <p className="px-4 text-sm font-extrabold text-curse sm:px-0">
           Hull reads {CURSE}. The first ball of every volley goes overboard.
