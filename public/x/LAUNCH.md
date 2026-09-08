@@ -1,63 +1,47 @@
-# Launch order
+# Launch — do in this order
 
-Do not skip. Token is last.
+Token is last. Do not skip.
 
-## Already done
-- Site: https://coupahoo.lol
-- GitHub: https://github.com/CoupAhoo/coupahoo
-- Vercel production
-- Game playable
-- X kit in this folder (logo, banner, cover, bio, article, first post)
+## Done
+- Site https://coupahoo.lol
+- GitHub CoupAhoo/coupahoo
+- Vercel
+- Play
+- Socials on site (X · Telegram · GitHub)
+- TG channel @CoupAhoo — caption in TELEGRAM.md (under 1024)
+- Chest.sol ready, not deployed
+- CHEST_CA and TOKEN_CA empty on purpose
 
-## 1. X profile (now, no CA)
-1. Avatar = `logo.png`
-2. Header = `banner.png` (5:2). X crops to 3:1 — keep the ship in the middle.
-3. Display name: Coup Ahoo
-4. Bio = `BIO.md` (first paragraph only)
-5. Website: https://coupahoo.lol
-6. Location: Robinhood Chain
-7. Pin nothing yet, or pin `PIN.md` without CA.
-8. Telegram channel: paste `TELEGRAM.md`. Image: `cover.png`. No CA.
+## Assets
+- Avatar https://coupahoo.lol/x/logo.png
+- Banner https://coupahoo.lol/x/banner.png
+- Cover https://coupahoo.lol/x/cover.png
+- Chest https://github.com/CoupAhoo/coupahoo/blob/main/contracts/Chest.sol
 
-## 2. Cabin
-Studio EOA. This is constructor `cabin` on Chest.sol.
-Never put this address in the LetsCash fee form.
+## NOW 1 — X profile
+Avatar logo.png · header banner.png · name Coup Ahoo · bio BIO.md first line · site coupahoo.lol · no CA.
 
-## 3. The Chest (Remix, chain 4663)
-- File: `contracts/Chest.sol`
-- Solidity 0.8.24, optimizer 200, EVM cancun
-- Constructor: cabin EOA
-- Verify on Blockscout, single file, MIT
-- Check: `cabin() == cabin`, `pots()`, `socials()`
+## NOW 2 — Cabin
+Studio EOA. Constructor `cabin_` on Chest.sol.
+Never this address in the LetsCash fee field.
 
-## 4. Paste The Chest
-`src/lib/game.ts` → `CHEST_CA`. Commit. Push. Vercel picks it up.
-Site Chest page should show the address.
+## NOW 3 — Deploy The Chest
+Remix · Injected Provider · Chest.sol · 0.8.24 · opt 200 · cancun.
+`cabin_` = studio EOA. Deploy. Verify on Blockscout. Read cabin / pots / socials.
+Send the address. It goes in `src/lib/game.ts` as `CHEST_CA`. Push. Site shows The Chest.
 
-## 5. First post (mechanics + infra)
-Paste `FIRST.md`. Cover image = `cover.png`.
-No token CA in this post. Say "CA posts at launch."
-Optional: X Article = `ARTICLE.md` with `cover.png`.
+## THEN 4 — X first post
+FIRST.md + cover.png. No token CA. “CA posts at launch.”
 
-## 6. LetsCash LAST
-- Name Coup Ahoo, ticker AHOO
-- Tax 3%
-- Fee recipient = The Chest only
-- Custom quote empty (ETH)
-- LP lock on
-- Developer buy your call
-- Do not put cabin / any EOA as fee recipient
+## THEN 5 — LetsCash LAST
+Name Coup Ahoo · ticker AHOO · tax 3% · fee recipient = The Chest only · quote ETH · LP lock.
+Not cabin. Not any EOA.
 
-## 7. Paste token CA
-`src/lib/game.ts` → `TOKEN_CA`. Commit. Push.
+## THEN 6 — Token CA
+Paste into `TOKEN_CA`. Push.
 
-## 8. Launch post
-Reply to the first post with CA, LetsCash link, explorer.
-Edit bio if you want the CA in it.
-Do not invent TVL, holders, or volume.
+## THEN 7 — Launch reply
+CA + LetsCash link + explorer. No fake TVL.
 
 ## Never
-- Token before The Chest
-- EOA as LetsCash fee recipient
-- Fake pots
-- Porting Haavikko sprites/song (attribution only)
+Token before The Chest. EOA as fee recipient. Fake pots.
