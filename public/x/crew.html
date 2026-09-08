@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Coup Ahoo crew</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet" />
+    <style>
+      html, body { margin: 0; background: #111; }
+      * { box-sizing: border-box; }
+      .board {
+        position: relative; width: 1500px; height: 1000px; overflow: hidden;
+        background: #5d9acf;
+        font-family: "Luckiest Guy", "Arial Black", sans-serif;
+      }
+      .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+      .fg { position: absolute; object-fit: contain; pointer-events: none; }
+      .sea { position: absolute; left: 0; right: 0; bottom: 0; height: 150px; background: #2aa9bd; border-top: 6px solid #fff8; }
+      .deck {
+        position: absolute; left: 0; right: 0; bottom: 144px; height: 26px;
+        background: #633f15; border-top: 5px solid #000; border-bottom: 5px solid #000;
+      }
+      .t {
+        margin: 0; color: #ff3; text-align: center; line-height: 0.9;
+        -webkit-text-stroke: 0.07em #000; paint-order: stroke fill; letter-spacing: 0.03em;
+      }
+      .s {
+        margin: 0; color: #fff8e7; text-align: center;
+        -webkit-text-stroke: 0.07em #000; paint-order: stroke fill;
+      }
+      .bubble {
+        position: absolute;
+        background: #fff8e7;
+        border: 5px solid #000;
+        border-radius: 22px;
+        padding: 10px 14px 8px;
+        color: #000;
+        font-size: 20px;
+        line-height: 1.12;
+        text-align: center;
+        box-shadow: 5px 5px 0 #000;
+        z-index: 6;
+      }
+      .bubble:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        margin-left: -12px;
+        bottom: -22px;
+        width: 0; height: 0;
+        border: 12px solid transparent;
+        border-top-color: #000;
+      }
+      .who { display: block; font-size: 13px; color: #633f15; margin-bottom: 3px; letter-spacing: 0.04em; }
+    </style>
+  </head>
+  <body>
+    <div class="board" id="crew">
+      <img class="bg" src="/ahoo/sky-texture.svg" alt="" />
+      <img class="fg" src="/ahoo/clouds.svg" alt="" style="top:0;left:-40px;width:1600px;height:220px" />
+      <div class="sea"></div>
+      <div class="deck"></div>
+      <p class="t" style="position:absolute;left:0;right:0;top:14px;font-size:58px">THE CREW TALKS</p>
+      <p class="s" style="position:absolute;left:0;right:0;top:82px;font-size:24px">COUP AHOO · coupahoo.lol</p>
+
+      <div class="bubble" style="left:28px;top:128px;width:250px">
+        <span class="who">LOOKOUT</span>
+        Their first ball hits water.
+      </div>
+      <img class="fg" src="/ahoo/crew-navigator.svg" alt="" style="left:40px;bottom:155px;width:250px;height:340px;z-index:4" />
+
+      <div class="bubble" style="left:330px;top:118px;width:310px">
+        <span class="who">CAPTAIN</span>
+        Dice are your hull. Don't roll thirteen.
+      </div>
+      <img class="fg" src="/ahoo/captain-posing.svg" alt="" style="left:340px;bottom:150px;width:310px;height:430px;z-index:4" />
+
+      <div class="bubble" style="left:720px;top:128px;width:280px">
+        <span class="who">GUNNER</span>
+        First shot bites +1. Keep the twos.
+      </div>
+      <img class="fg" src="/ahoo/crew-cannoneer.svg" alt="" style="left:750px;bottom:155px;width:250px;height:340px;z-index:4" />
+
+      <div class="bubble" style="left:1080px;top:128px;width:380px">
+        <span class="who">CARPENTER</span>
+        I plate a crate. The Chest pays the wake.
+      </div>
+      <img class="fg" src="/ahoo/crew-quartermaster.svg" alt="" style="left:1140px;bottom:155px;width:250px;height:340px;z-index:4" />
+    </div>
+  </body>
+</html>
