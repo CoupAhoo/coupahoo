@@ -17,7 +17,7 @@ function HoldPage() {
         </p>
       </header>
 
-      <section className="rounded-[18px] border-[3px] border-ink bg-paper p-5">
+      <section className="ahoo-card p-5">
         <h2 className="font-display text-2xl">Contract</h2>
         {hold ? (
           <p className="mt-2 font-mono text-sm">
@@ -37,7 +37,7 @@ function HoldPage() {
           { k: "Drip", v: `${FEE.holdShare.dripBps / 100}%`, d: "Accrues in The Hold. Paid out after the token is live." },
           { k: "Cabin", v: `${FEE.holdShare.cabinBps / 100}%`, d: "Studio. Withdraw only from cabin." },
         ].map((x) => (
-          <article key={x.k} className="rounded-[18px] border-[3px] border-ink bg-paper p-4">
+          <article key={x.k} className="ahoo-card p-4">
             <p className="font-display text-sm text-ink/50">{x.k}</p>
             <p className="font-display text-3xl">{x.v}</p>
             <p className="mt-1 text-sm text-ink/70">{x.d}</p>
@@ -45,7 +45,7 @@ function HoldPage() {
         ))}
       </section>
 
-      <section className="rounded-[18px] border-[3px] border-ink bg-paper p-5">
+      <section className="ahoo-card p-5">
         <h2 className="font-display text-2xl">How a cycle closes</h2>
         <ol className="mt-3 list-decimal space-y-2 pl-5 text-sm leading-relaxed">
           <li>Play. Your score stays on this device until you log it on-chain.</li>

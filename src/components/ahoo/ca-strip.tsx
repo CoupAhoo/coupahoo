@@ -6,7 +6,7 @@ export function CaStrip() {
   const [copied, setCopied] = useState(false);
   if (!ca) {
     return (
-      <div className="rounded-[14px] border-[3px] border-ink bg-paper px-4 py-3">
+      <div className="ahoo-card px-4 py-3">
         <p className="font-display text-lg tracking-wide">${TICKER}</p>
         <p className="text-sm text-ink/70">Contract posts at launch. The Hold is empty until then.</p>
       </div>
@@ -22,10 +22,10 @@ export function CaStrip() {
     }
   }
   return (
-    <div className="flex flex-wrap items-center gap-3 rounded-[14px] border-[3px] border-ink bg-paper px-4 py-3">
+    <div className="flex flex-wrap items-center gap-3 ahoo-card px-4 py-3">
       <span className="font-display tracking-wide">${TICKER}</span>
       <code className="font-mono text-sm">{shortCa(ca)}</code>
-      <button type="button" onClick={() => void copy()} className="ahoo-btn bg-gold text-ink !px-3 !py-1 !text-sm">
+      <button type="button" onClick={() => void copy()} className="ahoo-btn ahoo-btn-roll !px-3 !py-1 !text-sm">
         {copied ? "Copied" : "Copy"}
       </button>
       <a className="text-sm font-semibold underline" href={explorerAddress(ca)} target="_blank" rel="noreferrer">

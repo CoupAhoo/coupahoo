@@ -124,19 +124,19 @@ const ENEMIES: { name: string; sail: Sail; flavor: string }[] = [
 const EVENT_COPY: Record<EventKind, { title: string; body: string; yes: string; no: string }> = {
   castaway: {
     title: "A stranger on the rocks",
-    body: "No particular skill. Father is wealthy, they say, and will surely reward you.",
+    body: "Ahoy mate! Father is wealthy, they say, and will surely reward you.",
     yes: "YEAH",
     no: "NOPE",
   },
   shipwright: {
-    title: "Want to hire this shipwright?",
-    body: "He will plate one cargo die. Plated dice shrug off 1 damage.",
+    title: "Ahoy! I could plate one of your cargo!",
+    body: "It'll only be able to receive 1 damage at a time.",
     yes: "YEAH",
     no: "NOPE",
   },
   merchant: {
-    title: "A merchant flags you down",
-    body: "Trade your lowest cargo for a fresh 5-pip crate. Gold changes hands.",
+    title: "Ahoy mate! Interested in trade?",
+    body: "I'll give you fresh cargo for your lowest crate.",
     yes: "YEAH",
     no: "NOPE",
   },
@@ -147,14 +147,14 @@ const EVENT_COPY: Record<EventKind, { title: string; body: string; yes: string; 
     no: "DUMP",
   },
   cache: {
-    title: "A crate in the weed",
-    body: "Somebody lost a die. Take it, or leave the curse untempted.",
+    title: "Free cargo floating in the drink!",
+    body: "A vessel must have sunken here...",
     yes: "TAKE",
     no: "LEAVE",
   },
   recruiter: {
-    title: "A sailor waves from a dinghy",
-    body: "They want aboard. Crew is how you stop rolling like a fool.",
+    title: "Oi! Want to hire this sailor?",
+    body: "Crew is how you stop rolling like a fool.",
     yes: "HIRE",
     no: "PASS",
   },

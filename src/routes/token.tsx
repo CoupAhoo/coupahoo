@@ -38,7 +38,7 @@ function TokenPage() {
         </p>
       </header>
       <CaStrip />
-      <section className="overflow-hidden rounded-[18px] border-[3px] border-ink bg-paper">
+      <section className="ahoo-card overflow-hidden">
         <table className="w-full text-sm">
           <tbody>
             {rows.map(([k, v]) => (
@@ -52,7 +52,7 @@ function TokenPage() {
           </tbody>
         </table>
       </section>
-      <section className="rounded-[18px] border-[3px] border-ink bg-paper p-5">
+      <section className="ahoo-card p-5">
         <h2 className="font-display text-2xl">Addresses</h2>
         <ul className="mt-3 space-y-2 font-mono text-sm">
           <li>Token {CONTRACTS.token ? shortCa(CONTRACTS.token) : "— pending"}</li>
