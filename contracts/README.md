@@ -22,4 +22,7 @@ Cabin: `0xCFFaF07B22f5E2B60712Ae0576f130034Cc60918`
 
 `name()` is The Chest. `telegram()` is https://t.me/CoupAhoo.
 
-LetsCash: fee recipient = **The Chest** address above. Tax 3%. Not cabin. Not any EOA.
+Verified on Sourcify (runtime + creation match):
+https://sourcify.dev/server/v2/contract/4663/0x732aEC9b9A52528f9fFa71c4AF7d2eEb5aE779FA
+
+Blockscout’s own compiler currently 504s behind Cloudflare. On the explorer pick **Sourcify** as the method — the source is already there.
