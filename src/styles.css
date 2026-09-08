@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sky: #7eb8d8;
+  --color-sky-deep: #5a9cc4;
+  --color-sea: #3ec6d8;
+  --color-sea-deep: #2aa9bd;
+  --color-foam: #e8fbff;
+  --color-ink: #1c1917;
+  --color-paper: #fff8e7;
+  --color-paper-deep: #f3e6c4;
+  --color-sail-orange: #f5a318;
+  --color-sail-magenta: #e23e8b;
+  --color-gold: #f5d76e;
+  --color-hull: #8b542f;
+  --color-hull-deep: #6b3e22;
+  --color-curse: #c41e3a;
+  --color-yeah: #f5d76e;
+  --color-nope: #f4f1ea;
+  --font-display: "Lilita One", "Arial Black", system-ui, sans-serif;
+  --font-body: "Nunito", ui-sans-serif, system-ui, sans-serif;
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
+  body {
+    margin: 0;
+    background: var(--color-sky);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    text-rendering: optimizeLegibility;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+}
+
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes swell {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 120px 0;
+  }
+}
+@keyframes cursepulse {
+  0%,
+  100% {
+    color: var(--color-curse);
+  }
+  50% {
+    color: var(--color-ink);
+  }
+}
+
+.sea-swell {
+  background-image: radial-gradient(circle at 20px 8px, color-mix(in oklab, var(--color-foam) 55%, transparent) 3px, transparent 4px);
+  background-size: 48px 24px;
+  animation: swell 7s linear infinite;
+}
+.bob {
+  animation: bob 2.6s ease-in-out infinite;
+}
+.curse-glow {
+  animation: cursepulse 1.1s ease-in-out infinite;
+}
+
+.stroke-title {
+  color: var(--color-paper);
+  -webkit-text-stroke: 5px var(--color-ink);
+  paint-order: stroke fill;
+  text-shadow: 0 3px 0 color-mix(in oklab, var(--color-ink) 40%, transparent);
+}
+
+.ahoo-btn {
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+  border: 3px solid var(--color-ink);
+  border-radius: 8px;
+  padding: 0.55rem 1.15rem;
+  font-size: 1.05rem;
+  line-height: 1;
+  box-shadow: 0 3px 0 var(--color-ink);
+  transition: transform 120ms var(--ease-out, ease), box-shadow 120ms ease;
+}
+.ahoo-btn:hover:not(:disabled) {
+  transform: translateY(1px);
+  box-shadow: 0 2px 0 var(--color-ink);
+}
+.ahoo-btn:active:not(:disabled) {
+  transform: translateY(3px);
+  box-shadow: 0 0 0 var(--color-ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bob,
+  .sea-swell,
+  .curse-glow {
+    animation: none;
+  }
+}
