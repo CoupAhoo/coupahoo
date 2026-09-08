@@ -22,12 +22,13 @@ Token is last. Do not skip.
 Avatar logo.png · header banner.png · name Coup Ahoo · bio BIO.md first line · site coupahoo.lol · no CA.
 
 ## NOW 2 — Cabin
-Studio EOA. Constructor `cabin_` on Chest.sol.
+`0x732aEC9b9A52528f9fFa71c4AF7d2eEb5aE779FA`
+Constructor `cabin_` on Chest.sol.
 Never this address in the LetsCash fee field.
 
 ## NOW 3 — Deploy The Chest
 Remix · Injected Provider · Chest.sol · 0.8.24 · opt 200 · cancun.
-`cabin_` = studio EOA. Deploy. Verify on Blockscout. Read cabin / pots / socials.
+`cabin_` = `0x732aEC9b9A52528f9fFa71c4AF7d2eEb5aE779FA`. Deploy. Verify on Blockscout. Read cabin / pots / socials.
 Send the address. It goes in `src/lib/game.ts` as `CHEST_CA`. Push. Site shows The Chest.
 
 ## THEN 4 — X first post

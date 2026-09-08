@@ -23,7 +23,7 @@ Fee recipient for `$AHOO`. One LetsCash recipient. Split is inside:
 3. Compiler: `0.8.24` · Enable optimization · runs `200` · EVM `cancun`.
 4. Compile.
 5. Deploy & Run: Environment **Injected Provider**. Network **Robinhood Chain (4663)**.
-6. Constructor `cabin_` = studio EOA (the wallet you control). Never the LetsCash fee field.
+6. Constructor `cabin_` = `0x732aEC9b9A52528f9fFa71c4AF7d2eEb5aE779FA` (studio). Never the LetsCash fee field.
 7. Deploy. Confirm. Save the address.
 8. Verify on [Blockscout](https://robinhoodchain.blockscout.com) — single file, MIT, same compiler settings.
 9. Read: `cabin()` equals studio EOA. `pots()` is zeros. `socials()` shows The Chest + t.me/CoupAhoo.
@@ -38,5 +38,7 @@ Do not put an EOA in the LetsCash fee form.
 ## Constructor ABI
 
 ```
-000000000000000000000000 + cabin (20 bytes, no 0x)
+000000000000000000000000732aec9b9a52528f9ffa71c4af7d2eeb5ae779fa
 ```
+
+Cabin: `0x732aEC9b9A52528f9fFa71c4AF7d2eEb5aE779FA`

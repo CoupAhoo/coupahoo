@@ -32,6 +32,8 @@ export const WETH = "0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73";
 export const HOOK = "0x75A54357D9C78a2Db19004a5FDc76c50F9242AEC";
 export const POOL_MANAGER = "0x8366a39CC670B4001A1121B8F6A443A643e40951";
 
+/** Studio EOA. Constructor cabin_ on Chest.sol. Never the LetsCash fee recipient. */
+export const CABIN = "0x732aEC9b9A52528f9fFa71c4AF7d2eEb5aE779FA";
 /** Empty until the LetsCash launch is pasted in. */
 export const TOKEN_CA = "";
 /** Empty until Remix deploy of Chest.sol is pasted in. */
