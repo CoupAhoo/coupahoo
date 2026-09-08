@@ -63,7 +63,10 @@ export function Shell({ children }: { children: ReactNode }) {
       </main>
       <footer className="border-t-[3px] border-ink bg-paper">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-5 text-xs text-ink/70 sm:flex-row sm:items-center sm:justify-between">
-          <p>{ATTRIBUTION}</p>
+          <div className="flex items-center gap-3">
+            <Dude role="captain" size={36} />
+            <p>{ATTRIBUTION}</p>
+          </div>
           <p>
             <a className="font-semibold text-ink" href={SITE}>
               {SITE.replace("https://", "")}

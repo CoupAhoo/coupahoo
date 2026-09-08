@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1600 -750 3400 1400" width="1800" height="741.18">
+<!--
+  Scene geometry ported from "Coup Ahoo" by Antti Haavikko.
+  Source: github.com/anttihaavikko/coup-ahoo  (MIT License)
+  Ported from src/scene.ts and src/ship.ts canvas drawing code.
+-->
+<rect x="-3000" y="-3000" width="9000" height="9000" fill="#5d9acf"/>
+<g transform="translate(-1500,0) rotate(45)"><path d="M0,-2000 L0,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(-1400,0) rotate(45)"><path d="M1,-2000 L1,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(-1300,0) rotate(45)"><path d="M2,-2000 L2,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(-1200,0) rotate(45)"><path d="M3,-2000 L3,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(-1100,0) rotate(45)"><path d="M4,-2000 L4,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(-1000,0) rotate(45)"><path d="M5,-2000 L5,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(-900,0) rotate(45)"><path d="M6,-2000 L6,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(-800,0) rotate(45)"><path d="M7,-2000 L7,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(-700,0) rotate(45)"><path d="M8,-2000 L8,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(-600,0) rotate(45)"><path d="M9,-2000 L9,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(-500,0) rotate(45)"><path d="M10,-2000 L10,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(-400,0) rotate(45)"><path d="M11,-2000 L11,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(-300,0) rotate(45)"><path d="M12,-2000 L12,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(-200,0) rotate(45)"><path d="M13,-2000 L13,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(-100,0) rotate(45)"><path d="M14,-2000 L14,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(0,0) rotate(45)"><path d="M15,-2000 L15,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(100,0) rotate(45)"><path d="M16,-2000 L16,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(200,0) rotate(45)"><path d="M17,-2000 L17,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(300,0) rotate(45)"><path d="M18,-2000 L18,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(400,0) rotate(45)"><path d="M19,-2000 L19,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(500,0) rotate(45)"><path d="M20,-2000 L20,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(600,0) rotate(45)"><path d="M21,-2000 L21,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(700,0) rotate(45)"><path d="M22,-2000 L22,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(800,0) rotate(45)"><path d="M23,-2000 L23,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(900,0) rotate(45)"><path d="M24,-2000 L24,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(1000,0) rotate(45)"><path d="M25,-2000 L25,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(1100,0) rotate(45)"><path d="M26,-2000 L26,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(1200,0) rotate(45)"><path d="M27,-2000 L27,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(1300,0) rotate(45)"><path d="M28,-2000 L28,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(1400,0) rotate(45)"><path d="M29,-2000 L29,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(1500,0) rotate(45)"><path d="M30,-2000 L30,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(1600,0) rotate(45)"><path d="M31,-2000 L31,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<ellipse cx="-820" cy="-430" rx="154" ry="33" fill="none" stroke="#ffffff22" stroke-width="110" stroke-linecap="round" stroke-dasharray="0 88"/>
+<ellipse cx="-300" cy="-560" rx="119" ry="25.5" fill="none" stroke="#ffffff22" stroke-width="85" stroke-linecap="round" stroke-dasharray="0 68"/>
+<ellipse cx="260" cy="-470" rx="189" ry="40.5" fill="none" stroke="#ffffff22" stroke-width="135" stroke-linecap="round" stroke-dasharray="0 108"/>
+<ellipse cx="900" cy="-600" rx="133" ry="28.5" fill="none" stroke="#ffffff22" stroke-width="95" stroke-linecap="round" stroke-dasharray="0 76"/>
+<ellipse cx="1180" cy="-330" rx="161" ry="34.5" fill="none" stroke="#ffffff22" stroke-width="115" stroke-linecap="round" stroke-dasharray="0 92"/>
+<ellipse cx="-560" cy="-120" rx="112" ry="24" fill="none" stroke="#ffffff22" stroke-width="80" stroke-linecap="round" stroke-dasharray="0 64"/>
+<g transform="translate(-600,470)"><g transform="scale(1,1)">
+<rect x="-10" y="-550" width="15" height="520" fill="#7d572c" stroke="#000" stroke-width="7" stroke-linejoin="round"/>
+<path d="M-20,-520 Q-203,-400 -303,-183 L-20,-180 Z" fill="#fff" stroke="#000" stroke-width="7" stroke-linejoin="round"/>
+<g transform="scale(1.4)">
+<g transform="translate(-55,-72)"><g transform="translate(0,0) scale(1)">
+<path d="M0,-33.5 Q32.1,-31.75 22,0" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0,-33.5 Q-32.1,-31.75 -22,0" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(0,-3.5) rotate(1.15)">
+  <path d="M0,-40 L0,-90" stroke="#000" stroke-width="50" stroke-linecap="round" fill="none"/>
+  <path d="M0,-40 L0,-90" stroke="#dbac86" stroke-width="35" stroke-linecap="round" fill="none"/>
+  <g transform="translate(0,-20)">
+    <g transform="translate(22,-11.5)">
+      <path d="M0,-20.25 Q17.05,12.2 20,-16.75" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="20" cy="-16.75" r="3" fill="#000"/>
+      <g transform="translate(20,-16.75)"><path d="M0,0 L0,50" stroke="#000" stroke-width="12" stroke-linecap="round"/><path d="M0,0 L0,50" stroke="#633f15" stroke-width="6" stroke-linecap="round"/></g>
+    </g>
+    <g transform="translate(-22,-11.5)">
+      <path d="M0,-20.25 Q-22,-26.3 -13,-5.25" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="-13" cy="-5.25" r="3" fill="#000"/>
+    </g>
+    <g transform="translate(4,-51.75)"><g transform="scale(0.3)">
+      <ellipse cx="-44" cy="20" rx="16.5" ry="11" fill="#ed4ea3aa"/>
+      <ellipse cx="44" cy="20" rx="16.5" ry="11" fill="#ed4ea3aa"/>
+      <path d="M-16.8,20 Q0,40 16.8,20 Q0,40 -16.8,20" fill="#000" stroke="#000" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="-30" cy="0" rx="10" ry="10" fill="#000"/>
+      <ellipse cx="30" cy="0" rx="10" ry="10" fill="#000"/>
+    </g><g transform="translate(-3.9,0) scale(1.35)"><g transform="translate(0,-15.55)"><g transform="translate(0,18.25) scale(1.5,1.5)">
+        <g transform="translate(2,-1)"><path d="M8,-15 C-12,-5 -12,-5 -20,-5.7 C-10,-26 -3,-25.3 10,-18" fill="#e92" stroke="#000" stroke-width="6" stroke-linejoin="round"/><path d="M9,-17 C7,-25 7,-25 13.9,-35 C15,-25 15,-25 9,-17" fill="#a8edae" stroke="#000" stroke-width="6" stroke-linejoin="round"/></g>
+      </g></g></g></g>
+  </g>
+</g>
+</g></g>
+<g transform="translate(120,-122)"><g transform="translate(0,0) scale(0.9)">
+<path d="M0,-32 Q31.2,-31 22,0" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0,-32 Q-31.2,-31 -22,0" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(0,-2) rotate(1.15)">
+  <path d="M0,-40 L0,-90" stroke="#000" stroke-width="50" stroke-linecap="round" fill="none"/>
+  <path d="M0,-40 L0,-90" stroke="#e3e0bc" stroke-width="35" stroke-linecap="round" fill="none"/>
+  <g transform="translate(0,-20)">
+    <g transform="translate(22,-13)">
+      <path d="M0,-18 Q18,-23.6 17,-3" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="17" cy="-3" r="3" fill="#000"/>
+    </g>
+    <g transform="translate(-22,-13)">
+      <path d="M0,-18 Q-22,-23.6 -13,-3" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="-13" cy="-3" r="3" fill="#000"/>
+    </g>
+    <g transform="translate(4,-51)"><g transform="scale(0.3)">
+      <ellipse cx="-44" cy="20" rx="16.5" ry="11" fill="#ed4ea3aa"/>
+      <ellipse cx="44" cy="20" rx="16.5" ry="11" fill="#ed4ea3aa"/>
+      <path d="M-16.8,20 Q0,40 16.8,20 Q0,40 -16.8,20" fill="#000" stroke="#000" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="-30" cy="0" rx="10" ry="10" fill="#000"/>
+      <ellipse cx="30" cy="0" rx="10" ry="10" fill="#000"/>
+    </g><g transform="translate(-3.9,0) scale(1.35)"><g transform="translate(0,-16.6)"><g transform="translate(0,19) scale(-1.5,1.5)">
+        <g transform="translate(2,-1)"><path d="M8,-15 C-12,-5 -12,-5 -20,-5.4 C-10,-26 -3,-25.6 10,-18" fill="#9d55d4" stroke="#000" stroke-width="6" stroke-linejoin="round"/><path d="M9,-17 C7,-25 7,-25 14.2,-35 C15,-25 15,-25 9,-17" fill="#ff3" stroke="#000" stroke-width="6" stroke-linejoin="round"/></g>
+      </g></g></g></g>
+  </g>
+</g>
+</g></g>
+</g>
+<path d="M-200,-150 L-170,10 L180,10 L250,-160 Z M-193,-110 L233,-120 M-183,-72 L213,-77 M-173,-30 L193,-30 M-60,-535 L-80,-595 L80,-595 L60,-535 Z M-70,-565 L70,-565" fill="#633f15" stroke="#000" stroke-width="7" stroke-linejoin="round"/>
+<g transform="translate(-120,-100)"><text x="0" y="0" text-anchor="middle" font-family="Georgia, serif" font-size="40" fill="#ff3" stroke="#000" stroke-width="12" stroke-linejoin="round" paint-order="stroke fill">14</text></g>
+</g></g>
+<g transform="translate(900,490)"><g transform="scale(-1,1)">
+<rect x="-10" y="-550" width="15" height="520" fill="#8c8465" stroke="#000" stroke-width="7" stroke-linejoin="round"/>
+<path d="M-20,-520 Q-203,-400 -303,-183 L-20,-180 Z" fill="#d420b6" stroke="#000" stroke-width="7" stroke-linejoin="round"/>
+<g transform="scale(1.4)">
+<g transform="translate(-55,-72)"><g transform="translate(0,0) scale(1)">
+<path d="M0,-33.5 Q32.1,-31.75 22,0" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0,-33.5 Q-32.1,-31.75 -22,0" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(0,-3.5) rotate(1.15)">
+  <path d="M0,-40 L0,-90" stroke="#000" stroke-width="50" stroke-linecap="round" fill="none"/>
+  <path d="M0,-40 L0,-90" stroke="#734e3b" stroke-width="35" stroke-linecap="round" fill="none"/>
+  <g transform="translate(0,-20)">
+    <g transform="translate(22,-11.5)">
+      <path d="M0,-20.25 Q17.05,12.2 20,-16.75" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="20" cy="-16.75" r="3" fill="#000"/>
+      <g transform="translate(20,-16.75)"><path d="M0,0 L0,50" stroke="#000" stroke-width="12" stroke-linecap="round"/><path d="M0,0 L0,50" stroke="#7d572c" stroke-width="6" stroke-linecap="round"/></g>
+    </g>
+    <g transform="translate(-22,-11.5)">
+      <path d="M0,-20.25 Q-22,-26.3 -13,-5.25" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="-13" cy="-5.25" r="3" fill="#000"/>
+    </g>
+    <g transform="translate(4,-51.75)"><g transform="scale(0.3)">
+      <ellipse cx="-44" cy="20" rx="16.5" ry="11" fill="#ed4ea3aa"/>
+      <ellipse cx="44" cy="20" rx="16.5" ry="11" fill="#ed4ea3aa"/>
+      <path d="M-20,-5 L-50,-20" stroke="#000" stroke-width="11" stroke-linecap="round" fill="none"/>
+      <path d="M20,-5 L50,-20" stroke="#000" stroke-width="11" stroke-linecap="round" fill="none"/>
+      <path d="M-16.8,20 Q0,10 16.8,20 Q0,10 -16.8,20" fill="#000" stroke="#000" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="-30" cy="0" rx="10" ry="10" fill="#000"/>
+      <ellipse cx="30" cy="0" rx="10" ry="10" fill="#000"/>
+    </g><g transform="translate(-3.9,0) scale(1.35)"><g transform="translate(0,-15.55)"><g transform="translate(0,18.25) scale(1.5,1.5)">
+        <g transform="translate(2,-1)"><path d="M8,-15 C-12,-5 -12,-5 -20,-5.7 C-10,-26 -3,-25.3 10,-18" fill="#d420b6" stroke="#000" stroke-width="6" stroke-linejoin="round"/><path d="M9,-17 C7,-25 7,-25 13.9,-35 C15,-25 15,-25 9,-17" fill="#ff3" stroke="#000" stroke-width="6" stroke-linejoin="round"/></g>
+      </g></g></g></g>
+  </g>
+</g>
+</g></g>
+</g>
+<path d="M-200,-150 L-170,10 L180,10 L250,-160 Z M-193,-110 L233,-120 M-183,-72 L213,-77 M-173,-30 L193,-30" fill="#a68b49" stroke="#000" stroke-width="7" stroke-linejoin="round"/>
+<g transform="translate(-120,-100)"><text x="0" y="0" text-anchor="middle" font-family="Georgia, serif" font-size="40" fill="#a8edae" stroke="#000" stroke-width="12" stroke-linejoin="round" paint-order="stroke fill">07</text></g>
+</g></g>
+<path d="M2600,2000 L-1600,2000 L-1600,501.5 Q-1625,497.59 -1600,476.19 Q-1575,497.73 -1550,476.33 Q-1525,498.37 -1500,476.97 Q-1475,499.52 -1450,478.12 Q-1425,501.15 -1400,479.75 Q-1375,503.19 -1350,481.79 Q-1325,505.55 -1300,484.15 Q-1275,508.09 -1250,486.69 Q-1225,510.66 -1200,489.26 Q-1175,513.13 -1150,491.73 Q-1125,515.32 -1100,493.92 Q-1075,517.09 -1050,495.69 Q-1025,518.34 -1000,496.94 Q-975,518.96 -950,497.56 Q-925,518.91 -900,497.51 Q-875,518.16 -850,496.76 Q-825,516.75 -800,495.35 Q-775,514.75 -750,493.35 Q-725,512.25 -700,490.85 Q-675,509.4 -650,488 Q-625,506.34 -600,484.94 Q-575,503.24 -550,481.84 Q-525,500.26 -500,478.86 Q-475,497.57 -450,476.17 Q-425,495.28 -400,473.88 Q-375,493.51 -350,472.11 Q-325,492.32 -300,470.92 Q-275,491.75 -250,470.35 Q-225,491.79 -200,470.39 Q-175,492.38 -150,470.98 Q-125,493.45 -100,472.05 Q-75,494.89 -50,473.49 Q-25,496.56 0,475.16 Q25,498.32 50,476.92 Q75,500.04 100,478.64 Q125,501.58 150,480.18 Q175,502.84 200,481.44 Q225,503.73 250,482.33 Q275,504.2 300,482.8 Q325,504.25 350,482.85 Q375,503.88 400,482.48 Q425,503.17 450,481.77 Q475,502.2 500,480.8 Q525,501.07 550,479.67 Q575,499.93 600,478.53 Q625,498.9 650,477.5 Q675,498.1 700,476.7 Q725,497.64 750,476.24 Q775,497.63 800,476.23 Q825,498.1 850,476.7 Q875,499.08 900,477.68 Q925,500.56 950,479.16 Q975,502.47 1000,481.07 Q1025,504.73 1050,483.33 Q1075,507.23 1100,485.83 Q1125,509.81 1150,488.41 Q1175,512.33 1200,490.93 Q1225,514.62 1250,493.22 Q1275,516.55 1300,495.15 Q1325,517.99 1350,496.59 Q1375,518.83 1400,497.43 Q1425,519 1450,497.6 Q1475,518.49 1500,497.09 Q1525,517.29 1550,495.89 Q1575,515.48 1600,494.08 Q1625,513.13 1650,491.73 Q1675,510.38 1700,488.98 Q1725,507.37 1750,485.97 Q1775,504.27 1800,482.87 Q1825,501.23 1850,479.83 Q1875,498.43 1900,477.03 Q1925,495.99 1950,474.59 Q1975,494.04 2000,472.64 Q2025,492.65 2050,471.25 Q2075,491.87 2100,470.47 Q2125,491.71 2150,470.31 Q2175,492.12 2200,470.72 Q2225,493.05 2250,471.65 Q2275,494.37 2300,472.97 Q2325,495.98 2350,474.58 Q2375,497.73 2400,476.33 Q2425,499.48 2450,478.08 Q2475,501.09 2500,479.69 Q2525,502.46 2550,481.06 Z" fill="#03fcf477" stroke="#ffffffbb" stroke-width="7" stroke-linejoin="round"/>
+</svg>

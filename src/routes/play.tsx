@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { DieFace } from "@/components/ahoo/die-face";
+import { Dude } from "@/components/ahoo/dude";
 import { Sea } from "@/components/ahoo/sea";
 import { Ship } from "@/components/ahoo/ship";
 import { TitleMark } from "@/components/ahoo/title-mark";
@@ -156,9 +157,17 @@ function Play() {
           ) : null}
 
           {run.phase === "event" && copy ? (
-            <div className="mx-auto my-auto w-full max-w-lg ahoo-card p-5 text-center">
-              <p className="font-display text-2xl tracking-wide">{copy.title}</p>
-              <p className="mt-2 font-semibold leading-relaxed">{copy.body}</p>
+            <div className="flex flex-1 flex-col items-center justify-end gap-3 py-2">
+              <p className="stroke-title wobble text-center font-display text-2xl sm:text-3xl">{copy.title}</p>
+              <p className="max-w-lg text-center font-semibold text-paper [text-shadow:0_2px_0_var(--color-ink)]">
+                {copy.body}
+              </p>
+              <div className="flex w-full flex-wrap items-end justify-center gap-6">
+                <Ship name="You" sail="orange" cargo={run.cargo} crew={run.crew} compact captain />
+                <div className="flex flex-col items-center">
+                  <Dude role="carpenter" size={96} />
+                </div>
+              </div>
             </div>
           ) : null}
 

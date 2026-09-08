@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-45 -25 90 45" width="420" height="210">
+<!--
+  Character geometry ported from "Coup Ahoo" by Antti Haavikko.
+  Source: github.com/anttihaavikko/coup-ahoo  (MIT License)
+  Direct port of the canvas drawing code in src/dude.ts.
+-->
+
+<g transform="scale(0.6)">
+  <ellipse cx="-44" cy="20" rx="16.5" ry="11" fill="#ed4ea3aa"/>
+      <ellipse cx="44" cy="20" rx="16.5" ry="11" fill="#ed4ea3aa"/>
+      <path d="M-20,-5 L-50,-20" stroke="#000" stroke-width="11" stroke-linecap="round" fill="none"/>
+      <path d="M20,-5 L50,-20" stroke="#000" stroke-width="11" stroke-linecap="round" fill="none"/>
+      <path d="M-16.8,20 Q0,10 16.8,20 Q0,10 -16.8,20" fill="#000" stroke="#000" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="-30" cy="0" rx="10" ry="10" fill="#000"/>
+      <ellipse cx="30" cy="0" rx="10" ry="10" fill="#000"/>
+</g>
+</svg>

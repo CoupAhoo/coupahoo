@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-900 -300 1800 600" width="1400" height="466">
+<!--
+  Scene geometry ported from "Coup Ahoo" by Antti Haavikko.
+  Source: github.com/anttihaavikko/coup-ahoo  (MIT License)
+  Ported from src/scene.ts and src/ship.ts canvas drawing code.
+-->
+<rect x="-3000" y="-3000" width="9000" height="9000" fill="#5d9acf"/>
+<ellipse cx="-600" cy="-80" rx="168" ry="36" fill="none" stroke="#ffffff22" stroke-width="120" stroke-linecap="round" stroke-dasharray="0 96"/>
+<ellipse cx="-80" cy="-140" rx="126" ry="27" fill="none" stroke="#ffffff22" stroke-width="90" stroke-linecap="round" stroke-dasharray="0 72"/>
+<ellipse cx="420" cy="-40" rx="196" ry="42" fill="none" stroke="#ffffff22" stroke-width="140" stroke-linecap="round" stroke-dasharray="0 112"/>
+</svg>

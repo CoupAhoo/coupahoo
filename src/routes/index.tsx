@@ -1,13 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CaStrip } from "@/components/ahoo/ca-strip";
+import { Dude } from "@/components/ahoo/dude";
 import { Ship } from "@/components/ahoo/ship";
 import { Sea } from "@/components/ahoo/sea";
 import { TitleMark } from "@/components/ahoo/title-mark";
 import { LINE, TICKER, CURSE } from "@/lib/game";
 
 const DEMO = [
-  { id: "demo-1", pips: 6, plated: false },
-  { id: "demo-2", pips: 4, plated: true },
+  { id: "demo-1", pips: 5, plated: false },
+  { id: "demo-2", pips: 5, plated: false },
   { id: "demo-3", pips: 4, plated: false },
 ];
 
@@ -22,7 +23,7 @@ function Home() {
             Lets start by rolling for your cargo!
           </p>
           <TitleMark size="lg" className="text-center" />
-          <Ship name="Your sloop" sail="orange" cargo={DEMO} compact captain />
+          <Ship name="14" sail="magenta" cargo={DEMO} compact captain />
           <div className="flex flex-wrap justify-center gap-3">
             <Link to="/play" className="ahoo-btn ahoo-btn-roll no-underline">
               PLAY
@@ -44,20 +45,26 @@ function Home() {
             n: "01",
             t: "Cargo is the hull",
             d: "Each die is hit points and a gun. More crates, more shots. Empty the deck and you sink.",
+            role: "captain" as const,
           },
           {
             n: "02",
             t: `Fear ${CURSE}`,
             d: "If the pips sum to thirteen you are cursed. The first ball of every volley goes overboard.",
+            role: "enemy" as const,
           },
           {
             n: "03",
             t: "The Hold pays the wake",
             d: "Trades feed The Hold. Best run of each epoch can take the prize. Anyone may settle. No keeper.",
+            role: "carpenter" as const,
           },
         ].map((b) => (
-          <article key={b.n} className="ahoo-card p-5">
-            <p className="font-display text-sm text-ink/50">{b.n}</p>
+          <article key={b.n} className="ahoo-card flex flex-col p-5">
+            <div className="flex items-start justify-between gap-2">
+              <p className="font-display text-sm text-ink/50">{b.n}</p>
+              <Dude role={b.role} angry={b.role === "enemy"} size={52} />
+            </div>
             <h2 className="mt-1 font-display text-2xl tracking-wide">{b.t}</h2>
             <p className="mt-2 text-sm font-semibold leading-relaxed text-ink/80">{b.d}</p>
           </article>

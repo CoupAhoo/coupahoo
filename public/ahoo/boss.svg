@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-120 -300 240 320" width="420" height="560">
+<!--
+  Character geometry ported from "Coup Ahoo" by Antti Haavikko.
+  Source: github.com/anttihaavikko/coup-ahoo  (MIT License)
+  Direct port of the canvas drawing code in src/dude.ts.
+-->
+
+<g transform="translate(0,0) scale(1.3)">
+<path d="M0,-33.5 Q32.1,-31.75 22,0" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0,-33.5 Q-32.1,-31.75 -22,0" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(0,-3.5) rotate(1.15)">
+  <path d="M0,-40 L0,-90" stroke="#000" stroke-width="50" stroke-linecap="round" fill="none"/>
+  <path d="M0,-40 L0,-90" stroke="#734e3b" stroke-width="35" stroke-linecap="round" fill="none"/>
+  <g transform="translate(0,-20)">
+    <g transform="translate(22,-11.5)">
+      <path d="M0,-20.25 Q17.05,12.2 20,-16.75" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="20" cy="-16.75" r="3" fill="#000"/>
+      <g transform="translate(20,-16.75)"><path d="M0,0 L0,50" stroke="#000" stroke-width="12" stroke-linecap="round"/><path d="M0,0 L0,50" stroke="#7d572c" stroke-width="6" stroke-linecap="round"/></g>
+    </g>
+    <g transform="translate(-22,-11.5)">
+      <path d="M0,-20.25 Q-22,-26.3 -13,-5.25" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="-13" cy="-5.25" r="3" fill="#000"/>
+    </g>
+    <g transform="translate(4,-51.75)"><g transform="scale(0.3)">
+      <ellipse cx="-44" cy="20" rx="16.5" ry="11" fill="#ed4ea3aa"/>
+      <ellipse cx="44" cy="20" rx="16.5" ry="11" fill="#ed4ea3aa"/>
+      <path d="M-20,-5 L-50,-20" stroke="#000" stroke-width="11" stroke-linecap="round" fill="none"/>
+      <path d="M20,-5 L50,-20" stroke="#000" stroke-width="11" stroke-linecap="round" fill="none"/>
+      <path d="M-16.8,20 Q0,10 16.8,20 Q0,10 -16.8,20" fill="#000" stroke="#000" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="-30" cy="0" rx="10" ry="10" fill="#000"/>
+      <ellipse cx="30" cy="0" rx="10" ry="10" fill="#000"/>
+    </g><g transform="translate(-3.9,0) scale(1.35)"><g transform="translate(0,-15.55)"><g transform="translate(0,18.25) scale(1.5,1.5)">
+        <g transform="scale(0.75) translate(0,-12)"><path d="M-12,-10 L12,-10 L12,-25 L5,-19 L0,-27 L-5,-19 L-12,-25 Z" fill="yellow" stroke="#000" stroke-width="6" stroke-linejoin="round"/></g>
+      </g></g></g></g>
+  </g>
+</g>
+</g>
+</svg>

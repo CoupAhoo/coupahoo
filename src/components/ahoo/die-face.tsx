@@ -13,74 +13,72 @@ const PIP_POS: Record<number, [number, number][]> = {
   0: [],
   1: [[50, 50]],
   2: [
-    [28, 28],
-    [72, 72],
+    [25, 25],
+    [75, 75],
   ],
   3: [
-    [28, 28],
+    [25, 25],
     [50, 50],
-    [72, 72],
+    [75, 75],
   ],
   4: [
-    [28, 28],
-    [72, 28],
-    [28, 72],
-    [72, 72],
+    [25, 25],
+    [75, 25],
+    [25, 75],
+    [75, 75],
   ],
   5: [
-    [28, 28],
-    [72, 28],
+    [25, 25],
+    [75, 25],
     [50, 50],
-    [28, 72],
-    [72, 72],
+    [25, 75],
+    [75, 75],
   ],
   6: [
-    [28, 24],
-    [72, 24],
-    [28, 50],
-    [72, 50],
-    [28, 76],
-    [72, 76],
+    [25, 25],
+    [75, 25],
+    [25, 50],
+    [75, 50],
+    [25, 75],
+    [75, 75],
   ],
   7: [
-    [28, 24],
-    [72, 24],
+    [25, 25],
+    [75, 25],
     [50, 50],
-    [28, 50],
-    [72, 50],
-    [28, 76],
-    [72, 76],
+    [25, 50],
+    [75, 50],
+    [25, 75],
+    [75, 75],
   ],
   8: [
-    [28, 22],
-    [72, 22],
-    [28, 41],
-    [72, 41],
-    [28, 59],
-    [72, 59],
-    [28, 78],
-    [72, 78],
+    [25, 22],
+    [75, 22],
+    [25, 41],
+    [75, 41],
+    [25, 59],
+    [75, 59],
+    [25, 78],
+    [75, 78],
   ],
   9: [
-    [28, 22],
-    [72, 22],
+    [25, 22],
+    [75, 22],
     [50, 22],
-    [28, 50],
+    [25, 50],
     [50, 50],
-    [72, 50],
-    [28, 78],
+    [75, 50],
+    [25, 78],
     [50, 78],
-    [72, 78],
+    [75, 78],
   ],
 };
 
 function Star({ x, y }: { x: number; y: number }) {
   return (
-    <path
-      transform={`translate(${x} ${y})`}
-      d="M0 -11 L3.2 -3.4 L11 -3.4 L4.6 1.6 L7 9.5 L0 5 L-7 9.5 L-4.6 1.6 L-11 -3.4 L-3.2 -3.4 Z"
-      fill="var(--color-ink)"
-    />
+    <text x={x} y={y} textAnchor="middle" dominantBaseline="central" fontSize="28" fill="#000">
+      ✦
+    </text>
   );
 }
 
@@ -96,13 +94,8 @@ export function DieFace({
 }: Props) {
   const n = Math.max(0, Math.min(9, pips));
   const spots = PIP_POS[n] ?? PIP_POS[6];
-  const fill = selected
-    ? "var(--color-aim)"
-    : plated
-      ? "var(--color-plated)"
-      : "var(--color-die)";
-  const className =
-    "relative inline-flex items-center justify-center rounded-[5px] border-[3px] border-ink shadow-[2px_3px_0_0_var(--color-ink)]";
+  const fill = selected ? "#f2e949" : plated ? "#a9c5db" : "#fff";
+  const className = "relative inline-flex items-center justify-center border-[4px] border-black";
   const style = {
     width: size,
     height: size,
@@ -113,9 +106,7 @@ export function DieFace({
     <svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden="true">
       {damage
         ? spots.map(([x, y], i) => <Star key={i} x={x} y={y} />)
-        : spots.map(([x, y], i) => (
-            <circle key={i} cx={x} cy={y} r={plated ? 8 : 9} fill="var(--color-ink)" />
-          ))}
+        : spots.map(([x, y], i) => <circle key={i} cx={x} cy={y} r={8} fill="#000" />)}
     </svg>
   );
   if (onClick) {

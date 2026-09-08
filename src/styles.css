@@ -1,32 +1,35 @@
 @import "tailwindcss";
 
 @theme {
-  --color-sky: #7eb8d8;
-  --color-sky-deep: #5a9cc4;
-  --color-sky-line: #7a9ee0;
-  --color-sea: #3ec6d8;
+  --color-sky: #5d9acf;
+  --color-sky-deep: #4a86bb;
+  --color-sky-line: #0000ff22;
+  --color-sea: #03fcf4;
   --color-sea-deep: #2aa9bd;
-  --color-foam: #f4ffff;
-  --color-ink: #1c1917;
+  --color-foam: #ffffffbb;
+  --color-ink: #000000;
   --color-paper: #fff8e7;
   --color-paper-deep: #f3e6c4;
-  --color-sail-orange: #f5a318;
-  --color-sail-magenta: #e23e8b;
-  --color-gold: #f5d76e;
-  --color-hull: #8b542f;
-  --color-hull-deep: #6b3e22;
+  --color-sail-orange: #ee9922;
+  --color-sail-magenta: #d420b6;
+  --color-sail-yellow: #ff3;
+  --color-hat-yellow: #f0ed92;
+  --color-gold: #f0ed92;
+  --color-hull: #633f15;
+  --color-hull-deep: #4a2e10;
   --color-mast: #7d572c;
-  --color-cannon: #2a2a2a;
+  --color-cannon: #666666;
   --color-curse: #c41e3a;
-  --color-yeah: #f5d76e;
+  --color-yeah: #f0ed92;
   --color-yeah-deep: #6cd158;
   --color-nope: #fffdf7;
-  --color-die: #fffef8;
+  --color-die: #ffffff;
   --color-plated: #a9c5db;
   --color-aim: #f2e949;
-  --color-skin: #e3e0bc;
-  --color-skin-warm: #dbac86;
-  --color-skin-deep: #6e594f;
+  --color-skin: #dbac86;
+  --color-skin-warm: #e3e0bc;
+  --color-skin-deep: #734e3b;
+  --color-skin-pink: #ebb7cc;
   --color-blush: #ed4ea3;
   --font-display: "Luckiest Guy", "Lilita One", "Arial Black", system-ui, sans-serif;
   --font-body: "Nunito", ui-sans-serif, system-ui, sans-serif;
@@ -102,14 +105,6 @@
     transform: translateX(-50%);
   }
 }
-@keyframes cloud-drift {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-40px);
-  }
-}
 @keyframes cursepulse {
   0%,
   100% {
@@ -123,37 +118,8 @@
 .ahoo-sky {
   background-color: var(--color-sky);
 }
-.ahoo-water {
-  background: linear-gradient(180deg, color-mix(in oklab, var(--color-sea) 78%, #03fcf4) 0%, var(--color-sea-deep) 100%);
-}
-.cloud {
-  position: absolute;
-  display: block;
-  height: 28px;
-  border-radius: 999px;
-  background: rgb(255 255 255 / 0.22);
-  box-shadow: 22px 0 0 8px rgb(255 255 255 / 0.18);
-  animation: cloud-drift 18s linear infinite alternate;
-}
-.cloud-a {
-  top: 12%;
-  left: 8%;
-  width: 90px;
-}
-.cloud-b {
-  top: 22%;
-  left: 48%;
-  width: 130px;
-  animation-duration: 24s;
-}
-.cloud-c {
-  top: 8%;
-  left: 74%;
-  width: 70px;
-  animation-duration: 16s;
-}
 .wave-band {
-  animation: wave-shift 7s linear infinite;
+  animation: wave-shift 8s linear infinite;
 }
 .bob {
   animation: bob 2.8s ease-in-out infinite;
@@ -172,10 +138,10 @@
 }
 
 .stroke-title {
-  color: var(--color-paper);
-  -webkit-text-stroke: 0.09em var(--color-ink);
+  color: #fff;
+  -webkit-text-stroke: 0.1em #000;
   paint-order: stroke fill;
-  text-shadow: 0 0.06em 0 rgb(0 0 0 / 0.28);
+  text-shadow: 0 0.07em 0 rgb(0 0 0 / 0.35);
 }
 
 .ahoo-card {
@@ -216,7 +182,6 @@
 @media (prefers-reduced-motion: reduce) {
   .bob,
   .wobble,
-  .cloud,
   .curse-glow,
   .sink,
   .wave-band {

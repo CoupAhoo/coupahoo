@@ -1,5 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CaStrip } from "@/components/ahoo/ca-strip";
+import { Dude } from "@/components/ahoo/dude";
+import { Sea } from "@/components/ahoo/sea";
+import { TitleMark } from "@/components/ahoo/title-mark";
 import {
   CHAIN,
   CONTRACTS,
@@ -29,6 +32,12 @@ function TokenPage() {
   ];
   return (
     <div className="mx-auto flex max-w-3xl flex-col gap-6">
+      <Sea compact>
+        <div className="flex flex-col items-center gap-2 py-2">
+          <TitleMark size="sm" />
+          <Dude role="captain" posing size={96} />
+        </div>
+      </Sea>
       <header>
         <p className="font-display text-sm tracking-[0.2em] text-ink/50">${TICKER}</p>
         <h1 className="font-display text-5xl tracking-wide">The token is the wake.</h1>

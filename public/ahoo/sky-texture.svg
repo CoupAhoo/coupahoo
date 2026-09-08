@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-200 -200 400 400" width="800" height="800">
+<!--
+  Scene geometry ported from "Coup Ahoo" by Antti Haavikko.
+  Source: github.com/anttihaavikko/coup-ahoo  (MIT License)
+  Ported from src/scene.ts and src/ship.ts canvas drawing code.
+-->
+<rect x="-3000" y="-3000" width="9000" height="9000" fill="#5d9acf"/>
+<g transform="translate(-400,0) rotate(45)"><path d="M0,-2000 L0,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(-300,0) rotate(45)"><path d="M1,-2000 L1,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(-200,0) rotate(45)"><path d="M2,-2000 L2,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(-100,0) rotate(45)"><path d="M3,-2000 L3,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(0,0) rotate(45)"><path d="M4,-2000 L4,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(100,0) rotate(45)"><path d="M5,-2000 L5,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(200,0) rotate(45)"><path d="M6,-2000 L6,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(300,0) rotate(45)"><path d="M7,-2000 L7,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(400,0) rotate(45)"><path d="M8,-2000 L8,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+<g transform="translate(500,0) rotate(45)"><path d="M9,-2000 L9,5000" stroke="#0000ff11" stroke-width="48" stroke-linecap="round" stroke-dasharray="0 35" fill="none"/></g>
+</svg>
