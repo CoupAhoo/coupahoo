@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>How many days</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet" />
+    <style>
+      html, body { margin: 0; background: #111; }
+      .board { position: relative; width: 1500px; height: 1000px; overflow: hidden; background: #5d9acf; }
+      .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+      .fg { position: absolute; object-fit: contain; pointer-events: none; }
+      .t {
+        position: absolute; left: 40px; right: 40px; margin: 0; text-align: center;
+        font-family: "Luckiest Guy", "Arial Black", sans-serif;
+        color: #ff3; -webkit-text-stroke: 0.07em #000; paint-order: stroke fill;
+        letter-spacing: 0.03em; line-height: 0.9;
+      }
+      .s {
+        position: absolute; left: 40px; right: 40px; margin: 0; text-align: center;
+        font-family: "Luckiest Guy", "Arial Black", sans-serif;
+        color: #fff8e7; -webkit-text-stroke: 0.07em #000; paint-order: stroke fill;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bait" class="board">
+      <img class="bg" src="/ahoo/sky-texture.svg" alt="" />
+      <img class="fg" src="/ahoo/clouds.svg" alt="" style="top:10px;left:-50px;width:1650px;height:340px" />
+      <img class="fg" src="/ahoo/captain-posing.svg" alt="" style="left:430px;top:210px;width:640px;height:820px" />
+      <p class="t" style="top:28px;font-size:78px">HOW MANY DAYS</p>
+      <p class="t" style="top:118px;font-size:96px">TILL #1?</p>
+      <p class="s" style="bottom:28px;font-size:36px">$AHOO · DON'T ROLL THIRTEEN</p>
+    </div>
+  </body>
+</html>
